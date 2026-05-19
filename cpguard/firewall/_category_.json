@@ -1,0 +1,8 @@
+{
+  "label": "Firewall",
+  "position": 6,
+  "link": {
+    "type": "doc",
+    "id": "cpguard/firewall/overview"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "label": "App Portal",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "slug": "/app-portal"
+  }
+}

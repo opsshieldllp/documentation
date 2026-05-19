@@ -1,0 +1,8 @@
+{
+  "label": "Virus Scanner",
+  "position": 4,
+  "link": {
+    "type": "doc",
+    "id": "cpguard/virus-scanner/overview"
+  }
+}

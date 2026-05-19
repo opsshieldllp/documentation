@@ -1,0 +1,125 @@
+---
+slug: overview
+title: Overview
+sidebar_label: Requirements
+sidebar_position: 1
+tags: [cpguard, system-requirements, installation, opsshield, cpanel, directadmin, plesk, standalone, getting-started]
+description: Everything you need to know before installing cPGuard — supported operating systems, compatible control panels, architecture requirements, and ModSecurity prerequisites.
+---
+
+# cPGuard System Requirements
+
+Before installing cPGuard on your server, it's important to verify that your environment meets all the prerequisites. cPGuard is designed to run on 64-bit web servers with Apache, Nginx, or LiteSpeed — with native integration for the most popular control panels and configurable support for any supported OS through the Standalone pathway.
+
+{/* comment */}
+
+---
+
+## Supported Operating Systems
+
+cPGuard supports a wide range of enterprise and community Linux distributions across both x86_64 and ARM architectures.
+
+### RHEL-Based Distributions
+
+| Distribution | Supported Versions |
+|---|---|
+| CentOS | 7, Stream 8, Stream 9, Stream 10 |
+| RHEL | 7, 8, 9 |
+| CloudLinux | 7, 8, 9 |
+| AlmaLinux | 8, 9, 10 |
+| Rocky Linux | 8, 9, 10 |
+| Amazon Linux | 2 |
+
+### Debian-Based Distributions
+
+| Distribution | Supported Versions |
+|---|---|
+| Ubuntu LTS | 18.04, 20.04, 22.04, 24.04 |
+| Ubuntu LTS (ARM) | 22.04, 24.04 |
+| Debian | 10, 11, 12, 13 |
+| Debian (ARM) | 12 |
+
+:::tip
+ARM architecture support is available for Ubuntu 22.04/24.04 LTS and Debian 12 — useful for servers running on ARM-based cloud instances such as AWS Graviton.
+:::
+
+---
+
+## Supported Control Panels
+
+cPGuard ships with **native integration** for the three most widely used hosting control panels, and configurable **Standalone support** for everything else.
+
+import Tabs from '@theme/Tabs';
+      import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="cPanel" label="cPanel / WHM" default>
+    - WHM/cPanel version **11.76 or higher**
+    - PHP **IonCube** must be enabled for WHM/cPanel's internal PHP
+  </TabItem>
+  <TabItem value="directadmin" label="DirectAdmin">
+    - DirectAdmin version **1.57 or higher**
+    - **CustomBuild 2.0** required
+  </TabItem>
+  <TabItem value="plesk" label="Plesk">
+    - **Latest Plesk version** recommended
+    - **ModSecurity** must be enabled in Apache or Nginx within Plesk before installing cPGuard
+  </TabItem>
+</Tabs>
+
+
+
+---
+
+## Other Control Panel Support
+
+For servers running control panels other than cPanel, DirectAdmin, or Plesk, cPGuard uses its **Standalone configuration** pathway. The following panels have built-in Standalone support out of the box:
+
+- **CyberPanel**
+- **Webuzo**
+- **Control Web Panel (CWP)**
+- **Enhance**
+- **Webmin**
+- **RunCloud**
+- **InterWorx**
+
+Any other control panel or panel-free server can also be configured using cPGuard Standalone. Refer to the [Standalone Configuration guide](../getting-started/standalone-configuration) for details.
+
+:::note
+Even on panel-free servers (bare Linux without a control panel), cPGuard can be installed and configured using the Standalone pathway making it suitable for any 64-bit web server running a supported OS.
+:::
+
+---
+
+## Other Requirements
+
+Beyond the OS and control panel, the following additional requirements must be met:
+
+### Architecture
+
+- **x86_64** (64-bit) or **aarch64** (ARM 64-bit)
+
+:::warning
+**32-bit systems are not supported.** cPGuard requires a 64-bit processor architecture. Attempting to install on a 32-bit system will fail.
+:::
+
+### Kernel inotify Watch Count
+
+- The OS must support **tweaking the inotify watch count** in the kernel.
+
+:::warning
+**OpenVZ / Virtuozzo users:** The inotify watch count is set at the container level by the host provider — you cannot change it yourself. Contact your hosting provider to raise the inotify watch limit before installing cPGuard. Failing to do so may cause the scanner service to malfunction.
+:::
+
+### ModSecurity (for WAF)
+
+- **mod_security 2.9.4 or higher** is required to use the Web Application Firewall (WAF) feature.
+
+ModSecurity does not need to be installed before cPGuard itself, but it must be in place before you enable WAF rules. Refer to the relevant guide for your web server:
+
+- [Install ModSecurity 2.9.7 with Apache](../waf/install-modsecurity-apache-rhel.md)
+- [Install ModSecurity with Nginx on CentOS / Rocky Linux / AlmaLinux](../waf/ModSecurity-Nginx-CentOS-RockyLinux-AlmaLinux)
+- [Install ModSecurity with Nginx on Debian / Ubuntu](../waf/Install-modsecurity-nginx-debian-ubuntu.md)
+- [cPGuard WAF Required Settings and Dependencies](../waf/cpguard-waf-required-settings-and-depencies/)
+
+---
