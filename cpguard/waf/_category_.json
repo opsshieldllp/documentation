@@ -1,0 +1,8 @@
+{
+  "label": "WAF",
+  "position": 5,
+  "link": {
+    "type": "doc",
+    "id": "cpguard/waf/overview"
+  }
+}
