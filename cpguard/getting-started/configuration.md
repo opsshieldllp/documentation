@@ -1,6 +1,6 @@
 ---
-title: Enabling & Configuring via UI and CLI
-sidebar_position: 11
+sidebar_position: 3
+title: Initial configuration
 ---
 
 After completing the installation, turn on the recommended modules based on your server's needs.

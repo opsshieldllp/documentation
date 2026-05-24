@@ -1,9 +1,7 @@
 ---
-slug: cpguard-waf-integration-cli
+sidebar_label: WAF Integration
 title: cPGuard WAF Integration
-authors: [your-name]
 tags: [cpguard, waf, cli, command-line, modsecurity, whitelist, opsshield, web-application-firewall]
-date: 2024-06-30
 description: Learn how to enable and disable the cPGuard Web Application Firewall, toggle optional WAF modules, and manage rule whitelists — all from the command line using cpgcli.
 ---
 
@@ -24,7 +22,7 @@ When cPGuard is first installed, the WAF is **turned off by default**. This is a
 You can safely enable it at any time once you have reviewed your server's existing configuration.
 
 :::note
-Before enabling WAF, make sure your server meets all the prerequisites. Refer to the [WAF Requirements guide](../waf/cpguard-waf-required-settings-and-depencies.md) before proceeding.
+Before enabling WAF, make sure your server meets all prerequisites. Refer to the [Panel-Specific Steps](panel-specific-steps.md) page before proceeding.
 :::
 
 ---
@@ -110,7 +108,7 @@ waf --whitelist --remove 4500006
 ```
 
 :::note
-WAF configuration changes are **not applied instantly**. There is a brief time delay before updates take effect, and the change is typically followed by a **web server restart**. Plan accordingly if applying changes on a live production server.
+WAF configuration changes are not instant. cPGuard applies updates with a short delay and can automatically reload/restart required web services. If a change does not apply after a short wait, perform a manual restart.
 :::
 
 

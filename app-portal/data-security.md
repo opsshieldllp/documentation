@@ -1,16 +1,9 @@
 ---
-title: Data Privacy and Security in the cPGuard App Portal
+title: Data, privacy and security
 description: Understand how cPGuard handles your server data in the App Portal — what is stored, what is never stored, how the agent service works, and how communication between the portal and your server is secured.
-slug: app-portal-data-privacy-security
-authors:
-  - name: OpsShield Team
-tags: [cpguard, app-portal, security, data-privacy, encryption, agent-service]
-hide_table_of_contents: false
 ---
 
 Security and data privacy are central to how the cPGuard App Portal is designed. This page explains exactly what data is stored in the portal, what stays exclusively on your server, how communication is encrypted, and what access OpsShield support has to your infrastructure.
-
-{/* comment */}
 
 :::info
 All critical data including cPGuard logs and privileged information related to domains and users is stored on **your own servers** and fetched on demand via APIs when you open the App Portal.

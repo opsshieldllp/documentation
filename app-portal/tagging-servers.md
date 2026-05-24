@@ -1,13 +1,10 @@
 ---
-slug: cpguard-tagging-servers
-title: How to Tag and Organize Servers in cPGuard
-authors: [your-name]
+title: Tagging and organising
 tags: [cpguard, server-management, tagging, opsshield]
-date: 2024-08-14
 description: Learn how to use tags in the cPGuard App Portal to organize, filter, and quickly access your servers by group.
 ---
 
-# How to Tag and Organize Servers in cPGuard
+# How to Tag and Organize Servers
 
 When you're managing a large fleet of servers, finding the right one quickly can become a challenge. **cPGuard's tagging feature** lets you group servers using custom labels, making it easy to classify, filter, and access them based on any criteria you choose.
 

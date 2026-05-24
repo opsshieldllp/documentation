@@ -73,4 +73,3 @@ If you did not receive the reset email or are unsure which email address is regi
 [Raise a Support Ticket](https://manage.opsshield.com/client/plugin/support_manager/client_tickets/departments/)
 
 ---
-

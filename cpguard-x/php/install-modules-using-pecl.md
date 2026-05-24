@@ -1,11 +1,7 @@
 ---
 title: Install PHP Modules Using PECL
 description: Learn how to install third-party PHP extensions not listed in the cPGuard X GUI using PECL — including handling the disable_functions error, configuring PHP to load the extension, and removing extensions when no longer needed.
-slug: install-php-modules-pecl
-authors:
-  - name: OpsShield Team
 tags: [php, cpguard-x, pecl, php-extensions, php-modules, server-management]
-hide_table_of_contents: false
 ---
 # Install Additional PHP Modules Using PECL
 
@@ -14,7 +10,7 @@ cPGuard X allows you to enable many PHP modules directly from the GUI, but for t
 {/* comment */}
 
 :::info[GUI vs PECL]
-If the extension you need is already listed in the cPGuard X GUI, it is easier to enable it from **Settings → PHP Modules** without SSH. See [Enabling PHP Extensions in the GUI](/support/cpguard-x/php/enabling-php-extensions-gui) for those steps.
+If the extension you need is already listed in the cPGuard X GUI, it is easier to enable it from **Settings → PHP Modules** without SSH. See [Enabling PHP Extensions in the GUI](/support/cpguard-x/php/enable-php-module) for those steps.
 
 Use this guide for extensions **not available** in the GUI, including third-party modules.
 :::

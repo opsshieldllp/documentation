@@ -1,13 +1,10 @@
 ---
-slug: cpguard-grant-server-access-to-support
-title: Support
-authors: [your-name]
+title: Support access
 tags: [cpguard, support, ssh-access, app-portal, cli, opsshield, faq, troubleshooting]
-date: 2023-02-06
 description: Learn how to securely grant the cPGuard support team access to your server — both UI and SSH — using the App Portal or CLI, without sharing credentials over email, and how to revoke access once the issue is resolved.
 ---
 
-# How to Grant Server Access to the cPGuard Support Team
+# Granting server access to the cPGuard Support Team
 
 When troubleshooting deep-level issues with cPGuard, the OPSSHIELD support team may sometimes need direct access to your server to inspect log files, check configurations, or replicate specific problems. The cPGuard App Portal provides a secure, built-in way to grant this access without ever sending credentials over email or external communication channels.
 
@@ -178,4 +175,3 @@ No. Our support team connects via your **existing SSH port** (usually 22, or you
 #### 5. Is my data encrypted while stored in the Portal?
 
 Absolutely. We use **AES-256 encryption** for all stored credentials. The decryption key is only available to the authenticated support engineer assigned to your ticket and is never exposed to the web interface after submission.
-

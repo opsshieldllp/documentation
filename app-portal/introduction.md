@@ -1,12 +1,9 @@
 ---
-title: cPGuard App Portal
-description: Learn how to use the cPGuard App Portal at app.opsshield.com to manage all your servers from a single login — including the consolidated dashboard, per-server features, and quick server switching.
-slug: cpguard-app-portal-introduction
 sidebar_position: 1
-authors:
-  - name: OpsShield Team
+title: Overview
+description: Learn how to use the cPGuard App Portal at app.opsshield.com to manage all your servers from a single login — including the consolidated dashboard, per-server features, and quick server switching.
 tags: [cpguard, app-portal, server-management, multi-server, dashboard, security]
-hide_table_of_contents: false
+
 ---
 
 A centralised App Portal is available at [app.opsshield.com](https://app.opsshield.com) giving you a single place to view, manage, and monitor all your servers without having to log in to each server's control panel individually.
