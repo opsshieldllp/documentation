@@ -116,7 +116,7 @@ Open the following URL in your browser and log in with your registered email add
 ![Logo](../assets/img/cpguard/users/client-login.png)
 
 :::tip
-Your username is the email address used when you created your OPSSHIELD account at the time of purchase. If you have forgotten your password, refer to the [Reset Your OPSSHIELD Account Password](../shared/reset-password.md) guide.
+Your username is the email address used when you created your OPSSHIELD account at the time of purchase. If you have forgotten your password, refer to the [Reset Your OPSSHIELD Account Password](../shared/account#resetting-your-password) guide.
 :::
 
 ---
