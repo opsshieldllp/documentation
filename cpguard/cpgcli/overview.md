@@ -66,17 +66,17 @@ Use the command index below to quickly find details, instructions, and command o
 
 | Command | Description / Purpose | Reference Guide |
 |---|---|---|
-| `license` | License activation, status checks, and metadata sync | [License, Setup & Config](./general) |
-| `config` | Export and import full configuration profiles | [License, Setup & Config](./general) |
-| `cloud` | Connection checking and syncing to cloud nodes | [License, Setup & Config](./general) |
-| `update` | Manage application and signature database updates | [License, Setup & Config](./general) |
-| `support-access` | Grant or revoke remote technical access keys | [License, Setup & Config](./general) |
-| `api` | Manage local API keys for automation portal hooks | [License, Setup & Config](./general) |
-| `standalone-conf` | Hardening profile wizards and setups for direct OS installations | [License, Setup & Config](./general) |
-| `panel-integration` | Configure Single Sign-On and user features for control panels | [License, Setup & Config](./general) |
-| `branding` | White-label setups and branding assets configurations | [License, Setup & Config](./general) |
-| `ui-users` | Authorize specific login accounts with UI permissions | [License, Setup & Config](./general) |
-| `notification` | Set up SMTP mail relays and customer alerts options | [License, Setup & Config](./general) |
+| `license` | License activation, status checks, and metadata sync | [License, Setup & Config](./license-and-config) |
+| `config` | Export and import full configuration profiles | [License, Setup & Config](./license-and-config) |
+| `cloud` | Connection checking and syncing to cloud nodes | [License, Setup & Config](./license-and-config) |
+| `update` | Manage application and signature database updates | [License, Setup & Config](./license-and-config) |
+| `support-access` | Grant or revoke remote technical access keys | [License, Setup & Config](./license-and-config) |
+| `api` | Manage local API keys for automation portal hooks | [License, Setup & Config](./license-and-config) |
+| `standalone-conf` | Hardening profile wizards and setups for direct OS installations | [License, Setup & Config](./license-and-config) |
+| `panel-integration` | Configure Single Sign-On and user features for control panels | [License, Setup & Config](./license-and-config) |
+| `branding` | White-label setups and branding assets configurations | [License, Setup & Config](./license-and-config) |
+| `ui-users` | Authorize specific login accounts with UI permissions | [License, Setup & Config](./license-and-config) |
+| `notification` | Set up SMTP mail relays and customer alerts options | [License, Setup & Config](./license-and-config) |
 | `scanner` | Start, stop, or query background scanner state | [Malware Scanner](./malware-scanner) |
 | `dailyscan` | Configure midnight incremental file scans | [Malware Scanner](./malware-scanner) |
 | `weeklyscan` | Configure Sunday midnight full file scans | [Malware Scanner](./malware-scanner) |
@@ -104,5 +104,4 @@ Use the command index below to quickly find details, instructions, and command o
 | `process-monitor` | Configure runtime tracking of host binaries | [Monitors, LFD & Mail Queue](./monitors) |
 | `cron-monitor` | Monitor cron tables for unauthorized injection entries | [Monitors, LFD & Mail Queue](./monitors) |
 | `ip-reputation` | Query block status of outbound server IPs in public feeds | [Monitors, LFD & Mail Queue](./monitors) |
-
 

@@ -49,7 +49,7 @@ Before the license can be activated on a new server or IP address, it must be **
 
 Follow the complete reissue process in the dedicated guide:
 
-[How to Reissue a cPGuard License](#how-to-reissue-a-license)
+[How to Reissue a cPGuard License](/shared/license/migrate-or-reissue)
 
 In summary, the reissue steps are:
 1. Log in to the [OPSSHIELD Client Portal](https://manage.opsshield.com/index.php/client/login/)
@@ -69,7 +69,7 @@ cpgcli license --key LICENSE-KEY
 Replace `LICENSE-KEY` with your actual cPGuard license key. The key will be verified against the OPSSHIELD licensing server and bound to your new server's IP address.
 
 :::tip
-If you are activating on a brand-new server, make sure cPGuard is fully installed before running this command. Refer to the [Installation guide](../../cpguard/getting-started/installation/) if needed.
+If you are activating on a brand-new server, make sure cPGuard is fully installed before running this command. Refer to the [Installation guide](../../cpguard/getting-started/install/installation) if needed.
 :::
 
 ---
@@ -155,7 +155,7 @@ cpgcli license --key YOUR-LICENSE-KEY
 Replace `YOUR-LICENSE-KEY` with your actual license key. The key will be verified against the licensing server and your server will be bound to the App Portal again.
 
 :::tip
-If you are migrating to a completely new server, make sure cPGuard is already installed before running the license command. Refer to the [Installation guide](../../cpguard/getting-started/installation) if needed.
+If you are migrating to a completely new server, make sure cPGuard is already installed before running the license command. Refer to the [Installation guide](../../cpguard/getting-started/install/installation) if needed.
 :::
 
 :::note

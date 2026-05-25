@@ -166,7 +166,7 @@ Include /etc/nginx/cpguard_waf.conf
 
 ### Step 6. Configure cPGuard WAF Parameters
 
-Once the above steps are completed successfully, you can use the following parameter values from the cPGuard [Standalone configuration reference](../../standalone/instalation)
+Once the above steps are completed successfully, you can use the following parameter values from the cPGuard [Standalone configuration reference](../../standalone/configuration)
 
 ```
 waf_server = nginx

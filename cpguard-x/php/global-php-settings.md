@@ -18,7 +18,7 @@ cPGuard X provides flexible options to customize PHP behavior, allowing you to f
 | **Per-Domain Configuration** | Applies to a single website | Different sites need different PHP settings |
 | **Global PHP Configuration** | Applies server-wide to all websites | You want consistent base settings across all sites |
 
-This guide focuses on the **Global PHP Configuration** approach. For per-domain settings, refer to the [Per-Domain PHP Settings](/cpguard-x/php/managing-php-settings-control-panel) guide.
+This guide focuses on the **Global PHP Configuration** approach. For per-domain settings, refer to the [Per-Domain PHP Settings](/cpguard-x/php/php-settings) guide.
 
 ---
 
@@ -109,4 +109,4 @@ cPGuard X uses a straightforward override hierarchy. Which means If a website ha
 
 The Global PHP Settings feature in cPGuard X gives server administrators a single place to define consistent, server-wide PHP defaults. This is particularly useful when managing multiple websites and wanting to ensure a reliable baseline configuration without needing to configure each site individually.
 
-For more granular control on a per-site basis, see [Per-Domain PHP Settings](/cpguard-x/php/managing-php-settings-control-panel).
+For more granular control on a per-site basis, see [Per-Domain PHP Settings](/cpguard-x/php/php-settings).

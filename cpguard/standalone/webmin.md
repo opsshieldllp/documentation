@@ -84,7 +84,7 @@ If your Webmin/Virtualmin setup is customised and the automatic website-data det
 ## Related pages
 
 - [Standalone Overview & Installation](./overview)
-- [Standalone Configuration Reference](./instalation)
+- [Standalone Configuration Reference](./configuration)
 
 
  

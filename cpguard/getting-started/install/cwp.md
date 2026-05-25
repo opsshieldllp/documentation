@@ -114,7 +114,7 @@ If cPGuard does not automatically detect the correct path, you can manually ente
 
 Before configuring WAF for Apache, verify that ModSecurity is properly installed and configured on your CWP server. Refer to the prerequisites guide:
 
-[cPGuard WAF Requirements and Dependencies](../waf/cpguard-waf-required-settings-and-depencies)
+[cPGuard WAF Panel-Specific Steps](../../waf/panel-specific-steps)
 
 Once ModSecurity is confirmed working, configure the cPGuard WAF settings for Apache and then **enable WAF from the Settings page**.
 
@@ -175,4 +175,3 @@ Free installation assistance **does not include** ModSecurity installation for N
 | 8 | Open App Portal and verify the server appears | ☐ |
 
 ---
-

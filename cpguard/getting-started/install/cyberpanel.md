@@ -68,7 +68,7 @@ To enable the **Web Application Firewall (WAF)** on your CyberPanel server, ModS
 
 Refer to the dedicated guide for CyberPanel-specific ModSecurity installation and configuration:
 
- [cPGuard WAF Requirements and Dependencies](../waf/cpguard-waf-required-settings-and-depencies)
+ [cPGuard WAF Panel-Specific Steps](../../waf/panel-specific-steps)
 
 Follow the CyberPanel section of that guide to ensure ModSecurity is set up correctly before enabling WAF rules.
 

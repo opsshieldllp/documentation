@@ -100,7 +100,7 @@ The dropdown menu will display options such as:
 
 You can configure remote backups to securely store your data on supported destinations. This provides an extra layer of security by storing backups off-site.
 
-For detailed instructions on setting up remote backups, please refer to the [Remote Backup Configuration](../backups/remote-backups) guide.
+For detailed instructions on setting up remote backups, please refer to the [Remote Destinations](remote-destinations) guide.
 
 
 
