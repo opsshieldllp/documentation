@@ -84,7 +84,7 @@ auth_token = 8223aad3-171f-k25K-M0Fu-trUxs7L3sd3P_3ee84e3…
 ```
 
 :::info
-Refer to the [cPGuard Standalone Configuration documentation](../getting-started/standalone-configuration) for comprehensive details on all available INI file parameters.
+Refer to the [cPGuard Standalone Configuration Reference](../../standalone/configuration) for comprehensive details on all available INI file parameters.
 :::
 
 ### Running Unattended Installation
@@ -119,8 +119,8 @@ After successful installation:
 
 ## Related Documentation
 
-- [cPGuard Standalone Configuration](../getting-started/standalone-configuration)
-- [How to Modify Standalone Configuration File (cpguard.ini)](../faq/modify-standalone-configuration-file)
+- [cPGuard Standalone Configuration Reference](../../standalone/configuration)
+- [How to Modify Standalone Configuration File (cpguard.ini)](../../troubleshooting/modify-standalone-configuration-file)
 
 
 ## Support

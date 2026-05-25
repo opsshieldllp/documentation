@@ -52,7 +52,7 @@ You must complete the following steps **before** running the cPGuard installer:
 
 Full instructions are in the dedicated guide under the **"Settings required for Webuzo Control Panel"** section:
 
-[cPGuard WAF Requirements and Dependencies](../waf/cpguard-waf-required-settings-and-depencies)
+[cPGuard WAF Panel-Specific Steps](../../waf/panel-specific-steps)
 :::
 
 Once the ModSecurity pre-configuration is complete, proceed with the cPGuard installation below.

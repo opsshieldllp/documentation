@@ -194,5 +194,5 @@ Yes. You can update it from the profile settings page.
 
 ## Related Guides
 
-* [Licenses & Plans](./licenses-and-plans)
+* [Licenses & Plans](./license/overview)
 * [Billing & Payments](./billing-and-payments)

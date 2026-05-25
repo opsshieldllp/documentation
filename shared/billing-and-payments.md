@@ -303,4 +303,4 @@ Yes. Previous invoices remain available in the client area.
 ## Related Guides
 
 - [Account Management](./account)
-- [Licenses & Plans](./licenses-and-plans)
+- [Licenses & Plans](./license/overview)

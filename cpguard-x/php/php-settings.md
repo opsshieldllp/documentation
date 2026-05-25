@@ -140,4 +140,4 @@ Tuning these parameters helps balance **server resource usage** and **response p
 
 The PHP Settings section in cPGuard X gives you granular, per-website control over your PHP environment. Whether you're upgrading the PHP version, tweaking memory limits, or fine-tuning FPM process pools, all configuration is accessible through a clean GUI without needing to manually edit server config files.
 
-For server-wide PHP defaults, refer to the [Global PHP Settings](/cpguard-x/php/global-php-settings-server-wide) guide.
+For server-wide PHP defaults, refer to the [Global PHP Settings](/cpguard-x/php/global-php-settings) guide.

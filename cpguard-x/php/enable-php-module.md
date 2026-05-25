@@ -89,7 +89,6 @@ The PHP Modules section in cPGuard X provides a clean, toggle-based interface to
 
 ## Related Guides
 
-- [Managing PHP Settings in the Control Panel](/cpguard-x/php/managing-php-settings-control-panel) — per-domain `php.ini` and PHP-FPM tuning
-- [Global PHP Settings via Panel Settings](/cpguard-x/php/global-php-settings-server-wide) — server-wide PHP defaults
-- [Install Additional PHP Modules Using PECL](/cpguard-x/php/install-php-modules-pecl) — for extensions not available in the GUI
-
+- [Managing PHP Settings in the Control Panel](/cpguard-x/php/php-settings) — per-domain `php.ini` and PHP-FPM tuning
+- [Global PHP Settings via Panel Settings](/cpguard-x/php/global-php-settings) — server-wide PHP defaults
+- [Install Additional PHP Modules Using PECL](/cpguard-x/php/install-modules-using-pecl) — for extensions not available in the GUI

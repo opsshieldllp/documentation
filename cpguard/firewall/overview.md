@@ -126,7 +126,7 @@ cpgcli   fw -- debug
 	
 ---
 
-For details on managing  **Whitelisted and Blacklisted** IPs in the cPGuard Firewall, refer to the dedicated documentation:[Firewall Whitelist & Blacklist](../firewall/whitelist_blacklist) 
+For details on managing **Whitelisted and Blacklisted** IPs in the cPGuard Firewall, refer to the dedicated documentation: [Whitelisting IP addresses](whitelist-ips) and [Blacklisting IP addresses](blacklist-ips).
 
 
 ## Temporary Ban
@@ -768,4 +768,3 @@ cpgcli ip --ddns --list
 ```
 
 ---
-

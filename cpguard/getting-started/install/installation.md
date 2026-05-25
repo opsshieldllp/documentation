@@ -49,7 +49,7 @@ The installer automatically probes your system for the Operating System, Control
 
 ### 3. Standalone Servers & Unsupported Panels
 If your server does not use a control panel, or uses an unlisted/custom panel, the installer will automatically launch an **interactive configuration wizard** to collect your environment details.
-*   👉 See the [Standalone Overview & Installation](../../../cpguard/standalone/overview) for the install flow and [Standalone Configuration Reference](../../../cpguard/standalone/instalation) for the parameter details.
+*   👉 See the [Standalone Overview & Installation](../../standalone/overview) for the install flow and [Standalone Configuration Reference](../../standalone/configuration) for the parameter details.
 
 ---
 

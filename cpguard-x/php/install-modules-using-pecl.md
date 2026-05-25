@@ -10,7 +10,7 @@ cPGuard X allows you to enable many PHP modules directly from the GUI, but for t
 {/* comment */}
 
 :::info[GUI vs PECL]
-If the extension you need is already listed in the cPGuard X GUI, it is easier to enable it from **Settings → PHP Modules** without SSH. See [Enabling PHP Extensions in the GUI](/support/cpguard-x/php/enable-php-module) for those steps.
+If the extension you need is already listed in the cPGuard X GUI, it is easier to enable it from **Settings → PHP Modules** without SSH. See [Enabling PHP Extensions in the GUI](/cpguard-x/php/enable-php-module) for those steps.
 
 Use this guide for extensions **not available** in the GUI, including third-party modules.
 :::
@@ -192,6 +192,6 @@ PECL gives you the flexibility to install any PHP extension your application req
 
 ## Related Guides
 
-- [Enabling PHP Extensions in the GUI](/blog/enabling-php-extensions-gui) — toggle extensions available in the control panel without SSH
-- [Managing PHP Settings in the Control Panel](/blog/managing-php-settings-control-panel) — per-domain `php.ini` and PHP-FPM configuration
-- [Global PHP Settings via Panel Settings](/blog/global-php-settings-server-wide) — server-wide PHP defaults
+- [Enabling PHP Extensions in the GUI](/cpguard-x/php/enable-php-module) — toggle extensions available in the control panel without SSH
+- [Managing PHP Settings in the Control Panel](/cpguard-x/php/php-settings) — per-domain `php.ini` and PHP-FPM configuration
+- [Global PHP Settings via Panel Settings](/cpguard-x/php/global-php-settings) — server-wide PHP defaults

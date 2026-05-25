@@ -42,7 +42,7 @@ If you are **not** on the RunCloud Business plan, ModSecurity is not included an
 
 Follow the dedicated guide to install ModSecurity for Nginx on your server's OS:
 
-[Install ModSecurity with Nginx on Debian / Ubuntu](../waf/install-modsecurity-nginx-debian-ubuntu)
+[Install ModSecurity with Nginx on Debian / Ubuntu](../../waf/install-modsec/nginx-debian)
 
 ### OpenLiteSpeed (OLS) Stack
 
@@ -121,7 +121,7 @@ Once installation and firewall whitelisting are complete, log in to the App Port
 4. Enable WAF and configure the optional modules as needed.
 
 :::tip
-For a full breakdown of WAF options and optional modules (Captcha, Scanner, WebShell, Crawler protection), refer to the [cPGuard WAF Overview](../waf/overview) and [WAF Integration CLI](../waf/cpguard-waf-integration-cli) guides.
+For a full breakdown of WAF options and optional modules (Captcha, Scanner, WebShell, Crawler protection), refer to the [cPGuard WAF Overview](../../waf/overview) and [WAF Integration CLI](../../cpgcli/waf) guides.
 :::
 
 ---
@@ -151,4 +151,3 @@ Free installation assistance **does not include** manual ModSecurity installatio
 | 6 | Configure scanner, notifications, and other modules | ☐ |
 
 ---
-
