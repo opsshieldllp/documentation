@@ -1,8 +1,4 @@
 {
   "label": "App Portal",
-  "position": 1,
-  "link": {
-    "type": "doc",
-    "id": "app-portal/introduction"
-  }
+  "position": 1
 }

@@ -1,4 +1,5 @@
 ---
+sidebar_label: Two-Factor Authentication (2FA)
 title: Enable Two-Factor Authentication (2FA)
 ---
 

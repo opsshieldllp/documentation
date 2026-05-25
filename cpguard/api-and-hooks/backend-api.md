@@ -2,7 +2,6 @@
 sidebar_label: Backend API
 title: cPGuard Backend API
 sidebar_position: 10
-slug: /cpguard/backend-api
 ---
 
 # cPGuard API Documentation

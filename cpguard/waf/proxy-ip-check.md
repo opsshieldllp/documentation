@@ -56,4 +56,4 @@ cpgcli waf --disable=proxycheck
 
 - Use this together with WAF and IPDB for better source attribution.
 - Keep proxy/CDN configuration correct so trusted headers are passed reliably.
-- If IPs still look incorrect, review [Troubleshooting](troubleshooting.md).
+- If IPs still look incorrect, review [Troubleshooting](../troubleshooting/waf/troubleshooting.md).

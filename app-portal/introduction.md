@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Overview
+title: Introduction
 description: Learn how to use the cPGuard App Portal at app.opsshield.com to manage all your servers from a single login — including the consolidated dashboard, per-server features, and quick server switching.
 tags: [cpguard, app-portal, server-management, multi-server, dashboard, security]
 
@@ -41,25 +41,11 @@ Before selecting a server, the main navigation shows two items:
 |---|---|
 | **Consolidated Dashboard** | An at-a-glance overview of security status across all your servers |
 | **Server List** | A full list of all servers linked to your account |
+| **Mass Operations** | Perform actions across multiple servers simultaneously |
 
 ### Per-Server View : After Opening a Server
 
-Once you open a server from the server list, the navigation expands to show the full range of cPGuard features for that server:
-
-| # | Feature | Description |
-|---|---|---|
-| 1 | **Server Dashboard** | Overview of security events and server health |
-| 2 | **Manual Scans** | Trigger on-demand malware scans |
-| 3 | **Scanner Logs** | Review results from previous scans |
-| 4 | **CMS Threats** | Detected threats in WordPress, Joomla, and other CMS platforms |
-| 5 | **WAF Logs** | Web Application Firewall event logs |
-| 6 | **IPDB** | IP database of blocked and monitored addresses |
-| 7 | **Bot Attacks** | Detected bot traffic and attack attempts |
-| 8 | **Domain Reputation** | Reputation status of domains hosted on the server |
-| 9 | **IP Reputation** | Reputation checks on IPs interacting with your server |
-| 10 | **Rootkit Scanner** | Results from rootkit detection scans |
-| 11 | **CSF Configuration** | ConfigServer Security & Firewall settings |
-| 12 | **Settings** | cPGuard configuration options for the selected server |
+Once you open a server from the server list, the navigation expands to show the full range of cPGuard features for that server
 
 ---
 

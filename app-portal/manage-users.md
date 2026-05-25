@@ -11,7 +11,8 @@ The cPGuard App Portal supports multi-user access, allowing the license owner to
 
 By default, all servers are attached to the **license owner's account**. The license owner can selectively assign access to individual servers or all servers to other users who have an OpsShield account.
 
-:::warning Access Delegation Rules
+:::warning 
+Access Delegation Rules
 Only the **server owner (license owner)** can assign server access to others. A user who has been granted access to a server **cannot** further delegate that access to another user.
 :::
 
