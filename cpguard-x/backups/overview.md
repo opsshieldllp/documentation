@@ -1,7 +1,6 @@
 ---
 title: Managing and Scheduling Website Backups
 description: Learn how to configure, schedule, and manage website backups in cPGuard X with flexible backup options and retention policies.
-slug: managing-and-scheduling-website-backups
 ---
 
 ## Overview

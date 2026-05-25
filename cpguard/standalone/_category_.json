@@ -1,8 +1,4 @@
- {
+{
   "label": "Standalone",
-  "position": 10,
-  "link": {
-    "type": "generated-index",
-    "slug": "/cpguard/standalone"
-  }
+  "position": 2
 }

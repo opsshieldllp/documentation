@@ -1,13 +1,10 @@
 ---
-slug: cpguard-restore-quarantined-file
-title: How to Restore a Quarantined File in cPGuard
-authors: [your-name]
+sidebar_label: Restoring files
+title: Restoring a Quarantined file
 tags: [cpguard, scanner, quarantine, restore, false-positive, opsshield, faq, malware]
-date: 2022-06-29
 description: Learn how to correctly restore a quarantined file in cPGuard — whether restoring a single file or multiple files at once — and how to report false positives to improve future detection accuracy.
 ---
 
-# How to Restore a Quarantined File in cPGuard
 
 When cPGuard's scanner detects a threat and the configured file action is set to **quarantine**, the flagged file is moved to a secure quarantine directory rather than deleted outright. This preserves the file while removing it from its active web-accessible location — giving you the opportunity to review, restore, or permanently remove it.
 
@@ -17,7 +14,7 @@ This guide explains how to safely restore quarantined files back to their origin
 
 ---
 
-## Important: Never Copy Files Manually from Quarantine
+## Important: Never copy files manually from Quarantine
 
 Even though cPGuard uses a consistent naming convention that makes quarantined files easy to identify, you should **never directly copy or move a file from the quarantine directory back to its original location** using the command line or a file manager.
 

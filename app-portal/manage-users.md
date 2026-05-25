@@ -1,11 +1,6 @@
 ---
-title: Managing Users in the cPGuard App Portal
+title: Managing users
 description: Learn how to add users, assign server access, resend invitation emails, and manage user privileges in the cPGuard App Portal — without sharing your OpsShield account credentials.
-slug: app-portal-manage-users
-authors:
-  - name: OpsShield Team
-tags: [cpguard, app-portal, user-management, access-control, multi-user, server-management]
-hide_table_of_contents: false
 ---
 
 The cPGuard App Portal supports multi-user access, allowing the license owner to grant other team members access to specific servers without sharing account credentials. This makes it easy to manage access for system administrators, developers, or support staff across your server fleet.

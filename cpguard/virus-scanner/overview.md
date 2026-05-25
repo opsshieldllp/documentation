@@ -1,11 +1,11 @@
 ---
-title: Malware Scanner Overview
+title: Overview
 sidebar_position: 1
 ---
 
-# Malware Scanner Overview
+# Virus Scanner Overview
 
-The cPGuard Malware Scanner is a high-performance security engine designed to monitor and scan web-related files for malicious code, suspicious patterns, and unsafe behaviors. Optimized specifically for web hosting environments, it focuses on website document roots and publicly accessible directories to ensure server integrity without compromising performance.
+The cPGuard Virus Scanner is a high-performance security engine designed to monitor and scan web-related files for malicious code, suspicious patterns, and unsafe behaviors. Optimized specifically for web hosting environments, it focuses on website document roots and publicly accessible directories to ensure server integrity without compromising performance.
 
 The scanner operates using a multi-layered approach: real-time monitoring, scheduled re-checks, on-demand manual scans, and automated cleanup routines powered by signature-based detection and AI analysis.
 
@@ -26,8 +26,9 @@ You can add directories outside of standard document roots (e.g., custom upload 
 - **List directories**: `cpgcli watch --list`
 - **Remove directory**: `cpgcli watch --remove /path/to/directory`
 
-> [!WARNING]
-> Do not add system directories (like `/etc` or `/usr`) to the watchlist. cPGuard is optimized for web files; scanning system files may lead to stability issues or false positives.
+:::danger
+Do not add system directories (like `/etc` or `/usr`) to the watchlist. cPGuard is optimized for web files; scanning system files may lead to stability issues or false positives.
+:::
 
 ---
 
@@ -52,8 +53,10 @@ Initiate on-demand audits via the **App Portal (Virus Scanner > Manual Scans)** 
 | **Quick Scan** | Scans document roots of active websites. | `cpgcli scan --daily` |
 | **Path Scan** | Scans a specific directory path defined by the user. | `cpgcli scan --path /path/to/dir` |
 
-> [!IMPORTANT]
-> **The Importance of Regular Full Scans**: Malware signatures are updated frequently (often multiple times a day). It is critical to run a **Full Scan (`--all`)** at regular intervals. Files that were not detected as malicious during their initial upload may be identified and handled later as new signatures for emerging threats are added to the cPGuard database.
+
+:::tip
+Malware signatures are updated frequently (often multiple times a day). It is critical to run a **Full Scan (`--all`)** at regular intervals. Files that were not detected as malicious during their initial upload may be identified and handled later as new signatures for emerging threats are added to the cPGuard database.
+:::
 
 ---
 
@@ -91,5 +94,7 @@ Automate your response workflow by executing a custom PHP script whenever a thre
 * **Template**: `/opt/cpguard/app/scripts/virus_hook_sample.php`
 
 The script receives six arguments: **Original Path, Quarantine Path, Virus Description, Category, Username,** and **User Email**. This is commonly used to trigger custom notifications of take actions.
+
+For a complete guide and sample implementation, see [Virus Hook](../api-and-hooks/virus-hook).
 
 

@@ -1,11 +1,7 @@
 ---
 title: Lynis - Enhanced Server Security Auditing in cPGuard X
 description: Learn how Lynis is integrated into cPGuard X as an automated daily security auditing tool scanning system settings, detecting misconfigurations, and providing actionable remediation guidance through the Server Health dashboard.
-slug: lynis-server-security-auditing
-authors:
-  - name: OpsShield Team
 tags: [cpguard, lynis, security, server-auditing, linux-security, server-hardening, vulnerability-scanning]
-hide_table_of_contents: false
 ---
 
 cPGuard X now integrates **Lynis** as a powerful security auditing tool, replacing the traditional Rootkit Scanner. Lynis is a battle-tested, open-source security auditing tool for Linux and Unix-based systems, widely used for identifying vulnerabilities and improving server hardening.

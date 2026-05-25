@@ -1,7 +1,6 @@
 ---
 title: Remote Destinations
 sidebar_position: 3
-slug: remote-backups
 ---
 
 ## Overview

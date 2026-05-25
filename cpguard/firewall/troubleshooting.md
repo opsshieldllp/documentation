@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting
-sidebar_position: 5
+sidebar_position: 10
 ---
 
 If users are experiencing connectivity issues or you suspect a false positive, follow these steps.

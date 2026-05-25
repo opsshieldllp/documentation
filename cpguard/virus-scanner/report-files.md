@@ -1,6 +1,5 @@
 ---
 title: Reporting Files
-sidebar_position: 3
 ---
 
 # Reporting Files

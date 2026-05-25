@@ -1,6 +1,7 @@
 ---
-title: Defending Against DoS Attacks with cPGuard Firewall
 sidebar_position: 6
+sidebar_label: DoS attacks
+title: Defending Against DoS Attacks with cPGuard Firewall
 ---
 
 cPGuard provides multiple layers of protection against DoS (Denial of Service) attacks at the system firewall level. This article covers the available protection mechanisms and the commands to configure them.

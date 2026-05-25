@@ -1,8 +1,6 @@
 {
-  "label": "WAF",
-  "position": 5,
-  "link": {
-    "type": "doc",
-    "id": "cpguard/waf/overview"
-  }
+  "label": "Web Application Firewall",
+  "collapsed": true,
+  "collapsible": true,
+  "position": 5
 }
