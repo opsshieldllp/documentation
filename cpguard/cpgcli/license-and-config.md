@@ -79,9 +79,6 @@ Or import configuration dynamically from a secure URL:
 cpgcli config --import 'https://internal.secops.net/cpguard/baseline.ini'
 ```
 
-:::tip
-For complete, step-by-step guidance on setting up global automation profiles, see our detailed guide on [How to Import and Export cPGuard Configuration](./export-config).
-:::
 
 ---
 

@@ -49,6 +49,9 @@ We use **Asymmetric RSA Encryption** to ensure that your agent *only* listens to
 | **Portal → Agent** | Encoded with **Private Key** | Proves the command came from the official cPGuard Portal. |
 | **Agent → Portal** | Encoded with **Public Key** | Ensures the data can only be read by the Portal backend. |
 
+
+![communication flow](../assets/img/app-portal/communication-flow.png)
+
 ---
 
 ## 5. Where is your data? (Data-on-Demand)
@@ -115,3 +118,4 @@ To ensure the highest level of security, we maintain a strict "Air Gap" between 
 * **Subscription Management:** While the App Portal knows *if* a license is active, the detailed history of your invoices and payment methods remains behind an additional layer of security.
 
 This isolation ensures that even in the unlikely event of a service disruption on the App Portal, your sensitive financial data remains untouched and secure.
+    

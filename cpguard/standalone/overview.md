@@ -93,23 +93,5 @@ The file is copied to `/opt/cpguard/cpguard.ini` during installation.
 
 ## After Installation
 
-Standalone settings are stored in:
-
-```text
-/opt/cpguard/cpguard.ini
-```
-
-You can modify the file later and apply the changes with:
-
-```bash
-cpgcli standalone-conf --update
-```
-
-Or reopen the interactive wizard with:
-
-```bash
-cpgcli standalone-conf --wizard
-```
-
-For the full parameter reference, JSON formats, priorities, and examples, see [Standalone Configuration Reference](./instalation).
+If you had skipped the interactive prompts, you can provide the required values after installation by editing `/opt/cpguard/cpguard.ini` or using the CLI to set them one by one. For details on the parameters and formats, see the [Standalone Configuration Reference](configuration.md).
 

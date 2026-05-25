@@ -65,7 +65,8 @@ The cPGuard agent service is a lightweight process running on your server that a
 - Accepts only **pre-defined API procedures** — it cannot be instructed to perform arbitrary operations
 - All cPGuard data (logs, scan results, WAF events, etc.) is stored on your server and served via the agent on demand
 
-:::warning Agent Port and Access Control
+:::warning
+Agent Port and Access Control
 The agent service runs on a custom port and is **not open to the public internet**. Only the IP addresses of OpsShield's cloud servers are permitted to communicate with it. You will need to whitelist these IPs on your server's firewall.
 :::
 
@@ -73,17 +74,10 @@ The agent service runs on a custom port and is **not open to the public internet
 
 ## Communication Security Between the Portal and Your Server
 
-The browser does **not** communicate directly with the agent service on your server. The communication flow is:
+The browser does **not** communicate directly with the agent service on your server. The communication flow is as follows:
 
-```
-Your Browser
-     ↓  (HTTPS)
-App Portal Backend  ←→  Encrypts the request
-     ↓  (HTTPS + Public/Private Key Encryption)
-Agent Service on Your Server
-```
+![communication flow](../assets/img/app-portal/communication-flow.png)
 
-### Security measures in place:
 
 | Measure | Detail |
 |---|---|
@@ -123,5 +117,11 @@ This means you remain in full control of when and for how long OpsShield can acc
 
 ## Summary
 
+
 The cPGuard App Portal is architected around a clear principle: your sensitive server data stays on your server. The portal stores only the minimum information required to provide a useful multi-server dashboard, while all logs, domain data, and security events are fetched securely on demand. Multiple layers of encryption and access controls ensure that both your data and your servers remain protected.
+
+
+:::info
+For a deeper dive into the security architecture, see [Security Architecture](../shared/architechture.md).
+:::
 

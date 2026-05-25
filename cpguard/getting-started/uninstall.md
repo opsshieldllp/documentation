@@ -15,7 +15,7 @@ Uninstalling cPGuard is a quick and straightforward process. Whether you are dec
 If your intention is to **move cPGuard to a new server** rather than permanently remove it, you should handle the license before uninstalling. Once cPGuard is uninstalled, the license is released from the server and the server is removed from the App Portal.
 
 :::tip
-If you plan to reuse your cPGuard license on a different server or after an IP change, follow the [Migrate License to a New Server or IP Address](../../shared/license/migrate.md) guide before proceeding with uninstallation.
+If you plan to reuse your cPGuard license on a different server or after an IP change, follow the [Migrate License to a New Server or IP Address](../../shared/license/migrate-or-reissue.md) guide before proceeding with uninstallation.
 :::
 
 ---
@@ -64,6 +64,6 @@ If you encounter any issues during uninstallation or the script fails to complet
 
 [Raise a Support Ticket](https://manage.opsshield.com/index.php/client/plugin/support_manager/client_tickets/departments/)
 
-You can also [grant the support team SSH access](../../shared/support-access.md) to your server so they can assist directly.
+You can also [grant the support team SSH access](../../shared/support.md) to your server so they can assist directly.
 
 ---

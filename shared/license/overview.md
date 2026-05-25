@@ -1,6 +1,6 @@
 ---
-title: Licenses and Plans
-sidebar_position: 2
+title: Overview
+sidebar_position: 1
 description: Manage cPGuard and cPGuard X licenses, upgrades, renewals, server assignments and plan changes.
 ---
 
@@ -26,7 +26,7 @@ This includes:
 2. Under **Services**
 3. Select the license you wish to manage
 
-![Logo](../assets/img/license/cpg_service_manage1.png)
+![Logo](../../assets/img/license/cpg_service_manage1.png)
 
 ---
 ## Trial & Purchasing a License
@@ -88,15 +88,15 @@ There is no direct upgrade option available. You need to:
 2. Once logged in, find the license key you wish to cancel under the **Services** section
 3. Click on the **gear icon** corresponding to the license
 
-![Cancel](../assets/img/cpguard/general/lic1.png)
+![Cancel](../../assets/img/cpguard/general/lic1.png)
 
 4. Click on **Cancel** option
 
-![Cancel](../assets/img/cpguard/general/lic2.png)
+![Cancel](../../assets/img/cpguard/general/lic2.png)
 
 5. A pop-up window will appear with the following options:
 
-![Cancel](../assets/img/cpguard/general/lic3.png)
+![Cancel](../../assets/img/cpguard/general/lic3.png)
 
 ---
 
