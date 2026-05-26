@@ -1,7 +1,7 @@
 ---
 title: Enable PHP Extensions
 description: Learn how to enable or disable PHP modules through the cPGuard X GUI interface — a simple, no-SSH way to manage your PHP extensions per version with automatic PHP-FPM restart.
-tags: [php, cpguard, php-extensions, php-modules, server-management, web-hosting]
+
 ---
 
 # Enable PHP Modules

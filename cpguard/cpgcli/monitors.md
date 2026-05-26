@@ -2,7 +2,7 @@
 sidebar_position: 12
 title: Monitors, LFD & Mail Queue
 description: Configure LFD tracking, Outbound Spam Monitor (OSM), live process and cron monitoring, and IP reputation monitoring (DNSBL).
-tags: [cpguard, cpgcli, lfd, osm, process-monitor, cron-monitor, ip-reputation, dnsbl]
+
 ---
 
 # Monitors, LFD & Mail Queue

@@ -1,7 +1,7 @@
 ---
 title: Managing SSL Certificates in cPGuard X Control Panel
 sidebar_label: SSL
-tags: [cpguard, cpguard-x, ssl, lets-encrypt, https, custom-ssl, self-signed, security, website]
+
 description: Learn how to manage SSL certificates in the cPGuard X control panel — including enabling free automatic Let's Encrypt SSL, installing a custom SSL certificate, and generating a self-signed certificate.
 ---
 

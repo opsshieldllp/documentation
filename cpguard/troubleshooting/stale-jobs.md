@@ -1,6 +1,6 @@
 ---
 title: "Too Many cpguard-job-logs::fetchlogs Processes Running – Cause and Fix"
-tags: [cpguard, ipdb, troubleshooting, performance, disk-io, fetchlogs, opsshield, faq]
+
 description: Learn why multiple cpguard-job-logs::fetchlogs processes pile up on busy servers, what causes the disk IO spike, and how to fix it by disabling IPDB logging without disabling IPDB protection.
 ---
 

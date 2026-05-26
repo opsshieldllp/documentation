@@ -1,7 +1,7 @@
 ---
 title: Nginx Server Side Caching
 description: Learn how to enable and configure Nginx server-side proxy caching in cPGuard X — including URL and cookie-based exclusions, full cache purge, and targeted URL purging for individual pages.
-tags: [cpguard, nginx, caching, performance, server-management, web-hosting, wordpress]
+
 hide_table_of_contents: false
 ---
 

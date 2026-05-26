@@ -1,7 +1,7 @@
 ---
 title: Service Management and Monitoring
 description: Learn how to start, stop, restart, and monitor key server services like Nginx, Apache, OpenLiteSpeed, MySQL, and PHP-FPM directly from the cPGuard X control panel without using the command line.
-tags: [cpguard, server-management, nginx, apache, mysql, php-fpm, monitoring, web-hosting]
+
 ---
 
 cPGuard X gives you full control over your server's key services directly from the control panel — no SSH or command-line access needed. You can start, stop, restart, and monitor services all from a single, easy-to-use interface.

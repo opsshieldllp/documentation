@@ -1,7 +1,7 @@
 ---
 sidebar_label: Mass Operations
 title: Run Tasks Across Multiple Servers at Once
-tags: [cpguard, bulk-action, server-management, opsshield, app-portal]
+
 description: Learn how to use the Mass Operations feature in the cPGuard App Portal to apply actions and configuration changes across multiple servers simultaneously.
 ---
 

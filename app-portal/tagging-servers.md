@@ -1,6 +1,6 @@
 ---
 title: Tagging and organising
-tags: [cpguard, server-management, tagging, opsshield]
+
 description: Learn how to use tags in the cPGuard App Portal to organize, filter, and quickly access your servers by group.
 ---
 

@@ -1,7 +1,7 @@
 ---
 sidebar_position: 25
 title: cPGuard SRBL
-tags: [cpguard, srbl, exim, opsshield, app-portal, whitelist, rbl, email, cpanel, directadmin, spam, faq]
+
 description: Learn how to use and configure the SRBL feature in the cPGuard App Portal, including whitelisting domains and IPs.
 ---
 

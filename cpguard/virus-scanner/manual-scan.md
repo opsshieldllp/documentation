@@ -2,7 +2,7 @@
 sidebar_position: 2
 sidebar_label: Manual scan
 title: Manual virus scans
-tags: [cpguard, scanner, manual-scan, cli, app-portal, opsshield, faq, malware]
+
 description: Learn how to start a manual malware scan in cPGuard — against all public files, a specific document root, or a custom directory — using both the App Portal UI and the CLI.
 ---
 

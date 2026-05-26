@@ -1,6 +1,6 @@
 ---
 title: Support access
-tags: [cpguard, support, ssh-access, app-portal, cli, opsshield, faq, troubleshooting]
+
 description: Learn how to securely grant the cPGuard support team access to your server — both UI and SSH — using the App Portal or CLI, without sharing credentials over email, and how to revoke access once the issue is resolved.
 ---
 

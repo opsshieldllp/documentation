@@ -1,7 +1,7 @@
 ---
 sidebar_position: 6
 title: "License abuse detected"
-tags: [cpguard, license, faq, troubleshooting, opsshield, error-fix]
+
 description: Learn what the "cPGuard License abuse is detected" error means, why it appears, and the exact steps to resolve it so you can activate your legitimate cPGuard license.
 ---
 
