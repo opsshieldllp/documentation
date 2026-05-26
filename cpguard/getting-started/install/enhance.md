@@ -36,7 +36,7 @@ To obtain your authentication token:
 3. Click **Create Token**
 4. Copy the generated token for use during installation
 
-![Logo](../../../assets/img/setup/enhance_api_creation.jpg)
+![Logo](../../../assets/img/setup/enhance_api_creation.png)
 
 You can note the token and organisation id to enter it directly when prompted during installation.
 
