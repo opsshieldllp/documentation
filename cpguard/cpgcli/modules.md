@@ -2,7 +2,7 @@
 sidebar_position: 13
 title: Protection Modules
 description: Manage bot checks, account suspension, rootkit checks, SRBL, and CMS security controls.
-tags: [cpguard, cpgcli, cms, reputation, security]
+
 ---
 
 # Protection Modules

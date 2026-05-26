@@ -2,7 +2,7 @@
 sidebar_position: 6
 sidebar_label: Country Block
 title: Block Countries from accessing your websites
-tags: [cpguard, geo-blocking, ipdb, country-block, cli, opsshield, firewall, security]
+
 description: Learn how to block one or more countries from accessing your websites and server using cPGuard — both from the App Portal UI and the command line — in just a few steps.
 ---
 

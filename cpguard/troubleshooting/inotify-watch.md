@@ -1,6 +1,6 @@
 ---
 title: What Is Inotify Watch and How Does It Affect Server Performance?
-tags: [cpguard, inotify, scanner, kernel, openvz, virtuozzo, opsshield, faq, system-requirements, performance]
+
 description: A complete explanation of what inotify and inotify watch is, how it powers cPGuard's real-time file scanning, whether increasing the watch limit affects server performance, and what OpenVZ/Virtuozzo users need to know before installing cPGuard.
 ---
 

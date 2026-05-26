@@ -1,7 +1,7 @@
 ---
 sidebar_label: WAF Integration
 title: cPGuard WAF Integration
-tags: [cpguard, waf, cli, command-line, modsecurity, whitelist, opsshield, web-application-firewall]
+
 description: Learn how to enable and disable the cPGuard Web Application Firewall, toggle optional WAF modules, and manage rule whitelists — all from the command line using cpgcli.
 ---
 

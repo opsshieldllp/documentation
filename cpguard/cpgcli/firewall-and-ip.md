@@ -2,7 +2,7 @@
 sidebar_position: 9
 title: Firewall & IP Management
 description: Manage firewall state, country and port controls, IP lists, temporary bans, source feeds, and DDNS entries.
-tags: [cpguard, cpgcli, firewall, ip, fail2ban]
+
 ---
 
 # Firewall & IP Management

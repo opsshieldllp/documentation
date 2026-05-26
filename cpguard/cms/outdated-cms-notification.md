@@ -1,6 +1,6 @@
 ---
 title: Outdated CMS notifications
-tags: [cpguard, cms, wordpress, notifications, email, branding, opsshield, faq, security]
+
 description: Learn how to configure cPGuard to automatically send email notifications to hosting users when their CMS installations are outdated — including scheduling options and how to brand the notification emails.
 ---
 

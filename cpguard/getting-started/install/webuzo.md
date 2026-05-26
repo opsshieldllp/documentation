@@ -2,7 +2,7 @@
 sidebar_position: 3
 sidebar_label: Webuzo
 title: Installing on Webuzo
-tags: [cpguard, webuzo, antivirus, antimalware, modsecurity, waf, opsshield, standalone, security]
+
 description: Learn how to secure your Webuzo server using cPGuard — including the required ModSecurity pre-configuration, installation steps, App Portal setup, and optional standalone configuration via CLI.
 ---
 

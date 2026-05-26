@@ -2,7 +2,7 @@
 sidebar_position: 1
 title: License, Setup & Config
 description: A comprehensive guide to managing your cPGuard license, server setup, config import/export, email notifications, and platform integration command-line controls.
-tags: [cpguard, cpgcli, license, cloud, update, api, integration, setup, config, notification]
+
 ---
 
 # License, Setup & Config

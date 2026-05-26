@@ -2,7 +2,7 @@
 sidebar_position: 7
 title: Database Scanner
 description: Configure and execute the cPGuard Database Scanner (dbscan) to find malicious injections in your databases.
-tags: [cpguard, cpgcli, dbscan, database-scanner, security, wordpress]
+
 ---
 
 # Database Scanner (`dbscan`)

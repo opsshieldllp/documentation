@@ -1,7 +1,7 @@
 ---
 sidebar_label: Restoring files
 title: Restoring a Quarantined file
-tags: [cpguard, scanner, quarantine, restore, false-positive, opsshield, faq, malware]
+
 description: Learn how to correctly restore a quarantined file in cPGuard — whether restoring a single file or multiple files at once — and how to report false positives to improve future detection accuracy.
 ---
 

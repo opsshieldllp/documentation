@@ -2,7 +2,7 @@
 title: Per-Domain PHP Settings
 description: Learn how to manage PHP settings for each website in the cPGuard X control panel — including changing PHP versions, editing php.ini values, configuring PHP-FPM, and adding custom directives.
 sidebar_position: 1
-tags: [php, cpguard, server-management, web-hosting, php-fpm]
+
 ---
 
 # Managing PHP Settings in the Control Panel

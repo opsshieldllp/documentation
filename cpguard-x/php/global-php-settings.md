@@ -2,7 +2,7 @@
 title: Global PHP Settings 
 description: Learn how to configure server-wide default PHP and PHP-FPM settings in cPGuard X using the Panel Settings — applies globally to all websites unless overridden at the domain level.
 sidebar_position: 2
-tags: [php, cpguard, server-management, php-fpm, server-wide, web-hosting]
+
 ---
 
 # Global PHP Settings via Panel Settings (Server-Wide)

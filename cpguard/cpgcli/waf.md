@@ -2,7 +2,7 @@
 sidebar_position: 12
 title: Web Application Firewall
 description: Manage the cPGuard Web Application Firewall (WAF), custom modsec exemptions, custom rules, and secure file upload settings via HTTP Upload Scanner.
-tags: [cpguard, cpgcli, waf, upload-scanner, modsecurity, firewall, upload]
+
 ---
 
 # Web Application Firewall

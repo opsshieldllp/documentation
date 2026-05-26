@@ -4,7 +4,7 @@ sidebar_label: Configuration Reference
 title: Standalone Configuration Reference
 description: Full reference for standalone cpguard.ini settings, JSON formats, priorities, and update commands.
 keywords: [cpguard, standalone, configuration, cpguard.ini, modsecurity]
-tags: [cpguard, security, standalone-servers]
+
 ---
 
 # Standalone Configuration Reference

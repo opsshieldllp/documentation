@@ -1,7 +1,7 @@
 ---
 title: Installing on Web Panel (CWP) control panel
 sidebar_label: Control Web Panel
-tags: [cpguard, cwp, control-web-panel, centos-web-panel, nginx, apache, litespeed, modsecurity, opsshield, standalone, security]
+
 description: Step-by-step guide to installing and configuring cPGuard on a Control Web Panel (CWP) server — covering installation, web server configuration for Nginx and Apache stacks, and WAF setup.
 ---
 

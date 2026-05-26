@@ -2,7 +2,7 @@
 sidebar_position: 6
 title: Manual Scan
 description: Execute manual scans, consult logs, review reports, and configure databases or gateway upload checking modules.
-tags: [cpguard, cpgcli, scan, manual-scan, dbscan, log-action, upload-scanner]
+
 ---
 
 # Manual Scan and Operations
