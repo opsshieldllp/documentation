@@ -155,7 +155,7 @@ cpgcli license --key YOUR-LICENSE-KEY
 Replace `YOUR-LICENSE-KEY` with your actual license key. The key will be verified against the licensing server and your server will be bound to the App Portal again.
 
 :::tip
-If you are migrating to a completely new server, make sure cPGuard is already installed before running the license command. Refer to the [Installation guide](../../cpguard/getting-started/install/installation) if needed.
+If you are migrating to a completely new server, make sure cPGuard is already installed before running the license command. Refer to the [Installation guide](../../cpguard/getting-started/installation) if needed.
 :::
 
 :::note
