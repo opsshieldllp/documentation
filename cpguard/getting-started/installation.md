@@ -51,8 +51,7 @@ cPGuard features deep native integration with **cPanel/WHM, DirectAdmin, and Ple
 Log into your server via SSH as **root** and run the following command (replace `LICENSE-KEY` with your actual cPGuard license key):
 
 ```bash
-cd /usr/local/src && rm -f cpguard_install.sh && curl -o cpguard_install.sh -L [https://downloads.opsshield.com/cpguard/cpguard_install.sh](https://downloads.opsshield.com/cpguard/cpguard_install.sh) && bash cpguard_install.sh LICENSE-KEY
-
+cd /usr/local/src && rm -f cpguard_install.sh && curl -o cpguard_install.sh -L https://downloads.opsshield.com/cpguard/cpguard_install.sh && bash cpguard_install.sh LICENSE-KEY
 ```
 
 The installer automatically probes your system for the Operating System, Control Panel, and Web Server (Apache, Nginx, OpenLiteSpeed, or LiteSpeed). If it recognizes a native panel, it completes the installation silently. If it requires more information, it will prompt you via an interactive CLI wizard.
