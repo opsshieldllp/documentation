@@ -96,10 +96,14 @@ Refer to the [cPGuard Standalone Configuration Reference](../../standalone/confi
 Execute the installation command with the INI file path as an argument:
 
 ```bash
-cd /usr/local/src && rm -f cpguard_install.sh && curl -o cpguard_install.sh -L https://downloads.opsshield.com/cpguard/cpguard_install.sh && bash cpguard_install.sh LICENCE-KEY /path/to/config.ini
+cd /usr/local/src && rm -f cpguard_install.sh && curl -o cpguard_install.sh -L https://downloads.opsshield.com/cpguard/cpguard_install.sh && bash cpguard_install.sh LICENCE-KEY /path/to/enhance.ini
 ```
 
-Replace `/path/to/config.ini` with the actual path to your configuration file.
+Replace /path/to/enhance.ini with the actual path to your configuration file.
+
+Note: Here /path/to/enhance.ini is the path of your Enhance access token configuration file. The path can be any based on your preference, but the file name should be enhance.ini.
+
+If you wish to update the token file later, you can edit the file /opt/cpguard/app/scripts/enhance.ini any time after installation.
 
 ### Bulk Installation
 
