@@ -69,7 +69,7 @@ cpgcli license --key LICENSE-KEY
 Replace `LICENSE-KEY` with your actual cPGuard license key. The key will be verified against the OPSSHIELD licensing server and bound to your new server's IP address.
 
 :::tip
-If you are activating on a brand-new server, make sure cPGuard is fully installed before running this command. Refer to the [Installation guide](../../cpguard/getting-started/install/installation) if needed.
+If you are activating on a brand-new server, make sure cPGuard is fully installed before running this command. Refer to the [Installation guide](../../cpguard/getting-started/installation) if needed.
 :::
 
 ---

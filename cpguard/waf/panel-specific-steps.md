@@ -120,7 +120,7 @@ Set a valid hostname resolving to your server IP so health checks can run correc
 
 ![Logo](../../assets/img/cpguard/waf/cwp_cpg_modsecconf.png)
 
-3. Complete remaining steps in [CWP Standalone Configuration](../getting-started/install/cwp.md).
+3. Complete remaining steps in [CWP Standalone Configuration](../getting-started/panel-guides/cwp.md).
 
 ## LiteSpeed with Enhance Control Panel
 ---

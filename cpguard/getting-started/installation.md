@@ -1,6 +1,12 @@
 ---
 title: Installing cPGuard
 sidebar_position: 1
+description: Install cPGuard on supported servers and control panels.
+keywords:
+  - install cpguard
+  - cpguard installation
+  - install
+  - installing cPGuard
 ---
 
 # Installing cPGuard on your server
@@ -53,7 +59,7 @@ The installer automatically probes your system for the Operating System, Control
 
 ### 3. Standalone Servers & Unsupported Panels
 If your server does not use a control panel, or uses an unlisted/custom panel, the installer will automatically launch an **interactive configuration wizard** to collect your environment details.
-*   👉 See the [Standalone Overview & Installation](../../standalone/overview) for the install flow and [Standalone Configuration Reference](../../standalone/configuration) for the parameter details.
+*   👉 See the [Standalone Overview & Installation](../standalone/overview) for the install flow and [Standalone Configuration Reference](. ./standalone/configuration) for the parameter details.
 
 ---
 
@@ -64,10 +70,10 @@ After successfully running the installer, there are a few important steps to com
 ### 1. Whitelist App Portal IPs in Your Firewall
 To allow cPGuard to communicate with the centralized App Portal, you must whitelist the App Portal IP addresses in your server-level and cloud-level firewalls for TCP port `9098`. 
 
-Please refer to the [App Portal IPs List](../../../app-portal/errors.md#app-portal-ips-must-be-whitelisted) for the specific IP addresses to whitelist, as well as directions for cloud firewalls (like AWS, DigitalOcean, Linode, etc.).
+Please refer to the [App Portal IPs List](../../app-portal/errors.md#app-portal-ips-must-be-whitelisted) for the specific IP addresses to whitelist, as well as directions for cloud firewalls (like AWS, DigitalOcean, Linode, etc.).
 
 ### 2. Initial Configuration
-To prevent unintended blocks or configuration conflicts on startup, some modules are disabled by default. You can configure and enable modules and services by following our [Initial Configuration Guide](../configuration.md).
+To prevent unintended blocks or configuration conflicts on startup, some modules are disabled by default. You can configure and enable modules and services by following our [Initial Configuration Guide](configuration.md).
 
 ### 3. Introducing the `cpgcli` Command-Line Interface
 cPGuard comes with a powerful CLI tool, `cpgcli`, which allows you to manage scanner processes, configure modules, check status, and perform administrative operations directly from your terminal.
@@ -79,4 +85,4 @@ To view all available commands and options, run:
 cpgcli --help
 ```
 
-For a comprehensive commands reference, refer to the [cpgcli documentation](../../cpgcli/overview.md).
+For a comprehensive commands reference, refer to the [cpgcli documentation](../cpgcli/overview.md).
