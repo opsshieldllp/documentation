@@ -1,7 +1,11 @@
 ---
-title: Install cPGuard
+title: Installing cPGuard
 sidebar_position: 1
 ---
+
+# Installing cPGuard on your server
+
+This guide explains how to install cPGuard on supported Linux servers and hosting control panels.
 
 cPGuard uses a **single unified installer** that adapts automatically to your operating system, web server, and control panel. 
 
@@ -28,12 +32,12 @@ Identify your server setup below to get the correct installation instructions:
 ### 1. Dedicated Control Panels
 If you are using one of these panels,you can follow our dedicated, panel-specific guides:
 
-*   [Install on Webuzo](webuzo.md)
-*   [Install on Enhance](enhance.md)
-*   [Install on Control Web Panel (CWP)](cwp.md)
-*   [Install on CyberPanel](cyberpanel.md)
-*   [Install on InterWorx](interworx.md)
-*   [Install on Runcloud](runcloud.md)
+*   [Install on Webuzo](panel-guides/webuzo.md)
+*   [Install on Enhance](panel-guides/enhance.md)
+*   [Install on Control Web Panel (CWP)](panel-guides/cwp.md)
+*   [Install on CyberPanel](panel-guides/cyberpanel.md)
+*   [Install on InterWorx](panel-guides/interworx.md)
+*   [Install on Runcloud](panel-guides/runcloud.md)
 
 ### 2. cPanel, DirectAdmin, Plesk
 cPGuard features deep native integration with **cPanel/WHM, DirectAdmin, and Plesk**. For these panels, simply run the **Universal Installer Command** below. 
