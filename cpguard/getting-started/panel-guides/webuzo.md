@@ -40,25 +40,6 @@ cPGuard integrates with Webuzo through its **standard installation procedure**, 
 
 ---
 
-## Important: Pre-Installation ModSecurity Setup
-
-:::danger
-**Do not skip this step.** Webuzo does **not** enable ModSecurity by default. If you install cPGuard before completing the ModSecurity pre-configuration, the WAF will not function correctly.
-
-You must complete the following steps **before** running the cPGuard installer:
-
-1. Install **OWASP vendor rules** in Webuzo.
-2. **Disable** the OWASP vendor rules from within Webuzo (cPGuard will manage its own rule set — having both active causes conflicts).
-
-Full instructions are in the dedicated guide under the **"Settings required for Webuzo Control Panel"** section:
-
-[cPGuard WAF Panel-Specific Steps](../../waf/panel-specific-steps)
-:::
-
-Once the ModSecurity pre-configuration is complete, proceed with the cPGuard installation below.
-
----
-
 ## Step 1 : Install cPGuard on Webuzo
 
 Run the following command on your Webuzo server as root to download and execute the cPGuard installer:
@@ -102,34 +83,4 @@ Webuzo also supports **Single Sign-On (SSO)** with cPGuard — meaning Webuzo ad
 
 ---
 
-## Step 3 : Optional: Manual Standalone Configuration
 
-In most cases, cPGuard automatically detects the correct configuration for Webuzo during installation. However, if you want to **manually customise the configuration** or explicitly set cPGuard to standalone mode for your Webuzo server, run the following command after installation:
-
-```bash
-cpgcli standalone-conf --wizard
-```
-
-This launches an interactive wizard that guides you through providing the server details manually including the web server type, virtual host configuration paths, WAF settings, user list source, and suspend hook.
-
-:::note
-The standalone configuration wizard is **only needed if you want to customise** cPGuard's configuration beyond the automatic defaults. Most Webuzo installations will work correctly without this step.
-:::
-
-
-
----
-
-## Installation Checklist
-
-| Step | Task | Status |
-|---|---|---|
-| Pre-install | Install OWASP vendor rules in Webuzo | ☐ |
-| Pre-install | Disable OWASP vendor rules in Webuzo | ☐ |
-| 1 | Run cPGuard installer with license key | ☐ |
-| 2 | Confirm successful installation and App Portal URL | ☐ |
-| 3 | Log in to App Portal with OPSSHIELD client credentials | ☐ |
-| 4 | Configure WAF, scanner, and notifications in Settings | ☐ |
-| 5 | (Optional) Run `cpgcli standalone-conf --wizard` if needed | ☐ |
-
----
