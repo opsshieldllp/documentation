@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 sidebar_label: Blacklist IP
-title: Blacklisting IP addresses
+title: Whitelist & Blacklist Action
 ---
 
 Manage access precision by defining trusted networks or blocking known offenders. Whitelist and blacklist functionality gives you fine-grained control over which IPs can access your server and which are permanently or temporarily denied.
@@ -260,38 +260,47 @@ For managing large or frequently updated IP lists, you can import IP addresses d
 
 | Command | Description |
 |---|---|
-| `cpgcli ip --allow-source <path>` | Add all IPs in the file to the whitelist |
-| `cpgcli ip --allow-source --remove <path>` | Remove a source file from the whitelist |
-| `cpgcli ip --allow-source --list` | List all whitelisted source files |
+| `cpgcli ip --allow-source <path>` | Add all IPs in the file or URL to the whitelist |
+| `cpgcli ip --allow-source --remove <path>` | Remove a source file or URL from the whitelist |
+| `cpgcli ip --allow-source --list` | List all whitelisted source files and URLs |
 
 ### Blacklist Source Files
 
 | Command | Description |
 |---|---|
-| `cpgcli ip --deny-source <path>` | Add all IPs in the file to the blacklist |
-| `cpgcli ip --deny-source --remove <path>` | Remove a source file from the blacklist |
-| `cpgcli ip --deny-source --list` | List all blacklisted source files |
+| `cpgcli ip --deny-source <path>` | Add all IPs in the file or URL to the blacklist |
+| `cpgcli ip --deny-source --remove <path>` | Remove a source file or URL from the blacklist |
+| `cpgcli ip --deny-source --list` | List all blacklisted source files and URLs |
 
-**Example — Import a blocklist file:**
+## Examples
+
+**Import a blocklist from a local file:**
 ```bash
 cpgcli ip --deny-source /etc/firewall/blocklist.txt
 ```
 
-**Example — View all active whitelist source files:**
+**Import a blocklist from a remote URL:**
+```bash
+cpgcli ip --deny-source https://yourdomain.com/blocklist.txt
+```
+**View all active blocklist source files and URLs:**
 ```bash
 cpgcli ip --allow-source --list
 ```
 
----
-
-**Via CLI:**
+**Import an allowlist from a remote URL:**
+```bash
+cpgcli ip --allow-source https://yourdomain.com/allowlist.txt
+```
+**Import a allowlist from a local file:**
 
 ```bash
-cpgcli ip --allow-source <path_or_url>
+cpgcli ip --allow-source /etc/firewall/blocklist.txt
 ```
-
----
-
+**View all active whitelist source files and URLs:**
+```bash
+cpgcli ip --allow-source --list
+```
 **File format requirements:**
 
 * One IP or CIDR range per line
