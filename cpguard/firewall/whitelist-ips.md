@@ -81,9 +81,3 @@ cpgcli ip --allow-source --list
 > `path_to_file` — The path can be a local file or a URL.
 
 This option periodically reloads a set of IPs from the specified source. The source file must always be available. It is useful when you need to maintain a centralized or local whitelist that stays updated automatically.
-
-## Why You Cannot Remove an IP Address from IPDB?
-
-The IPDB blocklist is a list of IPs with a low reputation that is distributed to all servers from the central system. Our system will collect the incident reports related to attacks and analyze the source IPs frequently to build this list. So the blocklist is frequently reviewed, rebuilt, and distributed to all servers periodically. So the block list in IPDB is a dynamic list that will change every time IPDB reloads the list of blocked IPs ( happens every 2 hours on each server).
-
-That said, even if you remove the IP address from the block list, it may appear again while IPDB reloads the block list. That is why we recommend whitelisting the IP address that you wish to remove from the IPDB block list. So when you whitelist an IP address, that IP address will constantly be excluded from the IPDB block list. So that is the reason you are advised to whitelist an IP address to remove it from the IPDB blocking.

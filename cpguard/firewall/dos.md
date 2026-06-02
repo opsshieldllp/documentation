@@ -98,5 +98,5 @@ cpgcli fw --captcha enable
 
 We monitor website access logs and automatically block IP addresses by adding them to a temporary ban list when repeated suspicious activity is detected.
 
-If you choose to enable CAPTCHA in the firewall settings [Show CAPTCHA for blocked IPs](http://webdev.opsshield.com:3000/support/cpguard/firewall/overview#captcha-for-temporarily-blocked-ips), end users will be presented with a CAPTCHA verification page. This allows legitimate users to verify themselves and regain access, while helping to effectively filter out automated or malicious traffic.
+If you choose to enable CAPTCHA in the firewall settings [Show CAPTCHA for blocked IPs](../firewall/captcha/overview.md), end users will be presented with a CAPTCHA verification page. This allows legitimate users to verify themselves and regain access, while helping to effectively filter out automated or malicious traffic.
 

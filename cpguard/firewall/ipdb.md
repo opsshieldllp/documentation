@@ -220,6 +220,12 @@ The command returns whether the IP is blocked by IPDB, along with any additional
 
 ---
 
+## Why You Cannot Remove an IP Address from IPDB?
+
+The IPDB blocklist is a list of IPs with a low reputation that is distributed to all servers from the central system. Our system will collect the incident reports related to attacks and analyze the source IPs frequently to build this list. So the blocklist is frequently reviewed, rebuilt, and distributed to all servers periodically. So the block list in IPDB is a dynamic list that will change every time IPDB reloads the list of blocked IPs ( happens every 2 hours on each server).
+
+That said, even if you remove the IP address from the block list, it may appear again while IPDB reloads the block list. That is why we recommend adding the IP address to ignore list, that you wish to remove from the IPDB block list. So when you add IP address in to ignore list, that IP address will constantly be excluded from the IPDB block list. 
+
 ## Whitelisting IPs in IPDB
 
 If a legitimate IP is incorrectly blocked by IPDB, or you want to ensure specific IPs bypass IPDB checks, add them to your firewall ignorelist.
@@ -274,7 +280,7 @@ Whitelisted IPs bypass IPDB blocks and Fail2Ban rules, but the WAF continues to 
 **Legitimate traffic blocked:**
 
 1. Check if IP is in IPDB: `cpgcli ip --check <IP>`
-2. Whitelist the IP if confirmed legitimate
+2. Add the IP to ignore list if confirmed legitimate
 3. Report false positive to support for Cloud Advisor adjustment
 
 **High server load:**
