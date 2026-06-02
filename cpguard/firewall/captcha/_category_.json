@@ -1,0 +1,7 @@
+{
+  "label": "Captcha for blocked IPs",
+    "link": {
+    "type": "doc",
+    "id": "cpguard/firewall/captcha/overview"
+  }
+}
