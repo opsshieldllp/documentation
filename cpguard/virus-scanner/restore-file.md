@@ -86,7 +86,7 @@ After restoring the file, report it to the cPGuard team. So the rule can be revi
 
 Refer the following link for the steps to report a False Positive
 
-   → [Report False Positive](./report-files#1-reporting-a-false-positive)
+   → [Report False Positive](report-files#1-reporting-a-false-positive)
 
 
 ---
