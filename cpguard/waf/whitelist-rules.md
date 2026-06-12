@@ -29,6 +29,9 @@ cpgcli waf --watch
 
 Enter a filter pattern (IP, domain, or URI), then recreate the incident. The Rule ID will be displayed.
 
+![Logo](../../assets/img/cpguard/waf/cpg_waf_watch.png)
+
+
 ### Method 2: From App Portal
 
 1. Log in to App Portal → Select your server
@@ -174,10 +177,10 @@ See [WAF Overview](overview.md) for rule set details.
    ```bash
    # Apache
    systemctl restart httpd
-   
+
    # Nginx
    systemctl restart nginx
-   
+
    # LiteSpeed
    /usr/local/lsws/bin/lswsctrl restart
    ```
@@ -210,4 +213,3 @@ See [WAF Overview](overview.md) for rule set details.
 - Document business justification for each whitelisted rule
 - Review whitelist during security audits
 - Monitor for abuse of whitelisted patterns
-

@@ -13,6 +13,8 @@ This protects your server against common attack types including:
 
 Because LFD operates at the log level across multiple services simultaneously, it provides broad, coordinated protection without the need to configure separate tools for each service. All detection rules, thresholds, and ban durations are managed through a unified set of `.yaml` configuration files, giving you full control over how aggressively your server responds to threats.
 
+![lfd working](../../assets/img/cpguard/firewall/cpguard-lfd-working.webp)
+
 ---
 
 
@@ -116,6 +118,7 @@ cp /opt/cpguard/cpglfd/configs/jails.available/http.yaml /opt/cpguard/cpglfd/con
 
 - After that, make your changes in the custom file (`/opt/cpguard/cpglfd/configs/jails.available/http-custom.yaml`).
 - Exclude the default rule file (here `http.yaml`) via the **Excluded Protection Rules** section in the cPGuard app portal or via the command line.
+- Include the custom file using the 
 
 That's all. When a new cPGuard version is released, your custom file is preserved.
 
