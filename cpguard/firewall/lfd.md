@@ -59,7 +59,7 @@ cpgcli lfd --ignore <jail_name>
 Replace `<jail_name>` with availabe rule files, like:
 
 ```bash
-cpgcli lfd --ignore cpanel.yaml
+cpgcli lfd --ignore http.yaml
 ```
 
 ### Available Rule Files
@@ -111,11 +111,11 @@ So the Recommended approach is to use a custom file:
 - Copy the default file and rename it. For example:
 
 ```bash
-cp /opt/cpguard/cpglfd/configs/jails.available/cpanel.yaml /opt/cpguard/cpglfd/configs/jails.available/cpanel-custom.yaml
+cp /opt/cpguard/cpglfd/configs/jails.available/http.yaml /opt/cpguard/cpglfd/configs/jails.available/http-custom.yaml
 ```
 
-- After that, make your changes in the custom file (`/opt/cpguard/cpglfd/configs/jails.available/cpanel-custom.yaml`).
-- Exclude the default rule file (here `cpanel.yaml`) via the **Excluded Protection Rules** section in the cPGuard app portal or via the command line.
+- After that, make your changes in the custom file (`/opt/cpguard/cpglfd/configs/jails.available/http-custom.yaml`).
+- Exclude the default rule file (here `http.yaml`) via the **Excluded Protection Rules** section in the cPGuard app portal or via the command line.
 
 That's all. When a new cPGuard version is released, your custom file is preserved.
 
