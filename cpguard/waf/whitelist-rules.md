@@ -164,6 +164,14 @@ cpgcli waf --disable=webshell,rbl
 
 See [WAF Overview](overview.md) for rule set details.
 
+
+## Report a false positive for a WAF Rule Trigger
+
+If you believe that the WAF rule triggered a false positive and the WAF is blocking a legitimate request, you may report it as a false positive. You may do it directly from the WAF logs page. The option to directly report a rule from the action menu against each entry ( refer image below ).
+
+![Logo](../../assets/img/cpguard/waf/cpg_waf_report_false.png)
+
+
 ## Troubleshooting
 
 ### Whitelist Not Working
