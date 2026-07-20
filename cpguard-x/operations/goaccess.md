@@ -64,7 +64,7 @@ Click **GoAccess** to open the website analytics dashboard.
 
 The report will display statistics generated from the website's access logs.
 
-![cPGuard X websites](../../assets/img/operations/goaccess-dashboard.png)
+![cPGuard X websites](../../assets/img/websites/image40.png)
 
 ---
 
