@@ -81,6 +81,8 @@ Your server agent downloads the refined blocklist regularly to ensure you are pr
 3. Enable the **IPDB Switch**
 4. Optionally enable **IPDB Log Switch** to record blocks
 
+![Logo](../../assets/img/cpguard/firewall/ipdb-switch.png)
+
 **Via CLI:**
 
 ```bash
@@ -126,6 +128,14 @@ To prevent logging overhead on high-traffic servers, IPDB logging is optional an
 **Enable or disable logging:**
 
 Toggle the **IPDB Log Switch** when enabling/disabling the IPDB module via the App Portal, or use CLI parameters.
+
+![Logo](../../assets/img/cpguard/firewall/ipdb-switch.png)
+
+**Via CLI:**
+
+```bash
+cpgcli fw --ipdb-log enable|disable
+```
 
 ### Log Location
 
