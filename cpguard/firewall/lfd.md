@@ -118,7 +118,13 @@ cp /opt/cpguard/cpglfd/configs/jails.available/http.yaml /opt/cpguard/cpglfd/con
 
 - After that, make your changes in the custom file (`/opt/cpguard/cpglfd/configs/jails.available/http-custom.yaml`).
 - Exclude the default rule file (here `http.yaml`) via the **Excluded Protection Rules** section in the cPGuard app portal or via the command line.
-- Include the custom file using the 
+- Verify that `http-custom.yaml` is present in `/opt/cpguard/cpglfd/configs/jails.d`. 
+
+:::note
+
+**The maximum supported value for the LFD ban time is 24 hours.** Configuring a ban time greater than **24 hours** (for example, **48** or **72** hours) will not have any effect.
+
+:::
 
 That's all. When a new cPGuard version is released, your custom file is preserved.
 
