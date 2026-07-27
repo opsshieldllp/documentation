@@ -113,3 +113,159 @@ After a manual scan completes, the results are available in the **App Portal →
 
 ---
 
+## Scanner Management
+
+The `scanner` command is used to manage the cPGuard malware scanner service. This service is responsible for the automatic malware scanning functionality in cPGuard.
+
+To view the current scanner status:
+
+```bash
+cpgcli scanner
+```
+
+or
+
+```bash
+cpgcli scanner --status
+```
+
+### Enable the Scanner
+
+To enable the automatic malware scanner service:
+
+```bash
+cpgcli scanner --enable
+```
+
+### Disable the Scanner
+
+To disable the automatic malware scanner service:
+
+```bash
+cpgcli scanner --disable
+```
+
+> **Note:** Disabling the scanner only stops the automatic malware scanning service. You can still perform manual scans at any time using the `cpgcli scan` command.
+
+### Restart the Scanner
+
+If required, you can restart the scanner service using:
+
+```bash
+cpgcli scanner --restart
+```
+
+This is useful after changing scanner-related settings or when troubleshooting the scanner service.
+
+## Scheduled Scans
+
+In addition to manual scans, cPGuard provides several scheduled scanning options.
+
+### Daily Scan
+
+The daily scan re-checks all files in the watchlist that have been modified within the last 24 hours.
+
+To view the current configuration:
+
+```bash
+cpgcli dailyscan
+```
+
+Enable the daily scan:
+
+```bash
+cpgcli dailyscan --enable
+```
+
+Disable the daily scan:
+
+```bash
+cpgcli dailyscan --disable
+```
+
+### Weekly Scan
+
+The weekly scan runs every Sunday at midnight and re-checks all files in the watchlist that have been modified within the last 7 days.
+
+To view the current configuration:
+
+```bash
+cpgcli weeklyscan
+```
+
+Enable the weekly scan:
+
+```bash
+cpgcli weeklyscan --enable
+```
+
+Disable the weekly scan:
+
+```bash
+cpgcli weeklyscan --disable
+```
+
+### Scheduled Full Scan
+
+In addition to the daily and weekly incremental scans, cPGuard provides a built-in scheduled malware scan feature that allows you to configure and manage scheduled full scans for all monitored website files on the system.
+
+To view the current configuration:
+
+```bash
+cpgcli schedulescan
+```
+
+Enable the scheduled scan:
+
+```bash
+cpgcli schedulescan --enable
+```
+
+Disable the scheduled scan:
+
+```bash
+cpgcli schedulescan --disable
+```
+
+You can also customize the scan schedule and resource usage with the following options:
+
+- `--day <DAY>` – Sets the day of the month on which the full system scan will run. The default is **1** (the first day of every month).
+- `--nice <VALUE>` – Sets the CPU priority (nice value) for the scan process. The default is **0**.
+
+For example, to change the CPU priority:
+
+```bash
+cpgcli schedulescan --nice 10
+```
+
+A higher nice value lowers the scan process priority, allowing other applications and services to receive more CPU time and reducing the impact of the scheduled scan on busy servers.
+
+To change the day of the month when the scheduled scan runs:
+
+```bash
+cpgcli schedulescan --day 15
+```
+
+The above example schedules the full malware scan to run on the 15th day of every month.
+
+## AI Scan
+
+The AI scan feature enables AI-based analysis for suspicious files to improve malware detection.
+
+To view the current configuration:
+
+```bash
+cpgcli ai-scan
+```
+
+Enable AI scanning:
+
+```bash
+cpgcli ai-scan --enable
+```
+
+Disable AI scanning:
+
+```bash
+cpgcli ai-scan --disable
+```
