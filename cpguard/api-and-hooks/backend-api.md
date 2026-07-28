@@ -208,7 +208,62 @@ curl -k -s -X POST "https://localhost:9098/api/api.php?method=stats" \
   "alerts": null
 }
 ```
+The response contains two types of statistics:
 
+- **Current Server Status** – These values represent the server's current security and health status and are **not affected** by the `duration` parameter.
+- **Duration-based Statistics** – These values are generated for the requested time period. If `duration` is not specified, statistics for the last **30 days** are returned by default.
+
+#### Current Server Status
+
+The following fields represent the server's current status and are **not affected** by the `duration` parameter.
+
+| Field | Description |
+|------|-------------|
+| `response` | Contains the current server status, protection statistics, and server resource usage. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`quarantine_count` | Current number of files in quarantine. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`cms_threats` | Current number of CMS installations with detected issues. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`cms_outdated` | Current number of outdated CMS installations. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`blacklisted_ips` | Current number of server IPs with a poor reputation. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`blacklisted_domains` | Current number of hosted domains with a poor reputation. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`db_threats` | Current number of threats detected in databases. |
+| `overall` | Lifetime protection statistics since cPGuard was installed. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`scanner` | Total malware detections. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`brute_force` | Total brute-force attacks blocked. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`waf` | Total requests blocked by the Web Application Firewall. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`ipdb` | Total requests blocked based on IP reputation. |
+| `websites.stats` | Current server resource usage. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`cpu_usage` | Current CPU usage (%). |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`memory_usage` | Current memory usage (%). |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`disk_usage` | Current disk usage (%). |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`load_average` | Current server load average. |
+| `hostname` | Server hostname. |
+| `version` | Installed cPGuard version. |
+| `errors` | Error details, if any. |
+| `alerts` | Alert messages, if any. |
+
+#### Duration-based Statistics
+
+The following fields are generated for the requested `duration`. If `duration` is not specified, statistics for the last **30 days** are returned by default.
+
+| Field | Description |
+|------|-------------|
+| `report` | Daily protection statistics for the selected duration. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`day` | Date of the statistics. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`virus` | Malware files detected. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`symbolic` | Malicious symbolic links detected. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`binary` | Malicious binary files detected. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`suspicious` | Suspicious files detected. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`waf` | Requests blocked by the Web Application Firewall. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`ipdb` | Requests blocked based on IP reputation. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`brute_force` | Brute-force attacks blocked. |
+| `previous` | Summary of the previous period for comparison. Contains the same fields as `report`. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`virus` | Total malware files detected during the previous period. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`symbolic` | Total malicious symbolic links detected during the previous period. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`binary` | Total malicious binary files detected during the previous period. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`suspicious` | Total suspicious files detected during the previous period. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`waf` | Total requests blocked by the Web Application Firewall during the previous period. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`ipdb` | Total requests blocked based on IP reputation during the previous period. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`brute_force` | Total brute-force attacks blocked during the previous period. |
 ---
 
 ### User Report

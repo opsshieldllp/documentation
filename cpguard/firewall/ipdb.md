@@ -162,6 +162,59 @@ Nov 10 13:02:15 server kernel: IPDB Blocked: IN=eth0 OUT= MAC=e:00:00:00:01:01:0
 
 ---
 
+## IPDB CAPTCHA
+
+The **IPDB CAPTCHA** feature allows users whose IP addresses are blocked by **IPDB** to verify themselves by completing a CAPTCHA challenge instead of being denied access immediately.
+
+When this feature is enabled, visitors accessing the website from an IP that has been blocked by IPDB will be redirected to a CAPTCHA verification page. After successfully completing the CAPTCHA, access to the website is restored automatically.
+
+This feature helps reduce false positives by allowing legitimate users to regain access without requiring manual intervention.
+
+---
+
+To enable or disable IPDB CAPTCHA from the cPGuard App Portal:
+
+![Logo](../../assets/img/cpguard/firewall/ipdb-captcha.png)
+
+1. Navigate to **Protection → Firewall**.
+2. Locate the **IPDB CAPTCHA** option.
+3. Toggle the option **On** or **Off** as required.
+
+You can also enable, disable, or check the status of IPDB CAPTCHA using the `cpgcli` command.
+
+Enable IPDB CAPTCHA:
+
+```bash
+cpgcli fw --ipdb-captcha enable
+```
+
+Disable IPDB CAPTCHA:
+
+```bash
+cpgcli fw --ipdb-captcha disable
+```
+
+Check the current status:
+
+```bash
+cpgcli fw --ipdb-captcha
+```
+
+---
+
+### How It Works
+
+When **IPDB CAPTCHA** is enabled:
+
+1. A visitor attempts to access a website.
+2. If the visitor's IP address is blocked by **IPDB**, they are redirected to the CAPTCHA verification page.
+
+![Firewall](../../assets/img/cpguard/firewall/fw8.png)
+
+3. Once the visitor successfully completes the CAPTCHA:
+   - The IP address is automatically removed from the IPDB block.
+   - The visitor immediately regains access to the website.
+
 ## Verifying IPDB is Working
 
 After enabling IPDB, confirm it's functioning properly using these methods:
