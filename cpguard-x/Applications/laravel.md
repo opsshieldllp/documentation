@@ -1,5 +1,5 @@
 ---
-title: Laravel Configuration
+title: Laravel
 sidebar_position: 1
 ---
 
