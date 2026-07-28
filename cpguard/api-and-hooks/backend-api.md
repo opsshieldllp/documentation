@@ -113,6 +113,103 @@ if ($httpCode == 200) {
 ```
 
 ---
+### Statistics
+
+Retrieve consolidated protection statistics for the server such as quarantined items, WAF blocks, IP reputation blocks, and CMS threats, over a chosen time period.
+
+```
+POST https://localhost:9098/api/api.php?method=stats
+```
+
+**Curl example:**
+
+```bash
+curl -k -s -X POST "https://localhost:9098/api/api.php?method=stats" \
+     -H "Authorization: Bearer 3cf8f5xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx3cd4d71f8df795285b" -d "duration=10"
+```
+
+**Payload:**
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `duration`(optional) | integer | Number of days to include in the stats. |
+
+**Response Format:**
+
+```json
+{
+  "status": true,
+  "response": {
+    "quarantine_count": 2,
+    "cms_threats": 2,
+    "cms_outdated": 2,
+    "blacklisted_ips": 0,
+    "blacklisted_domains": 0,
+    "db_threats": 0,
+    "report": [
+      {
+        "day": "2026-07-23",
+        "virus": 0,
+        "symbolic": 0,
+        "binary": 0,
+        "suspicious": 0,
+        "waf": 0,
+        "ipdb": 0,
+        "brute_force": 0
+      },
+      {
+        "day": "2026-07-24",
+        "virus": 0,
+        "symbolic": 0,
+        "binary": 0,
+        "suspicious": 0,
+        "brute_force": 0,
+        "waf": 26,
+        "ipdb": 1151
+      },
+      {
+        "day": "2026-07-25",
+        "virus": 0,
+        "symbolic": 0,
+        "binary": 0,
+        "suspicious": 0,
+        "brute_force": 0,
+        "waf": 14,
+        "ipdb": 469
+      }
+    ],
+    "previous": {
+      "virus": 3,
+      "symbolic": 0,
+      "binary": 0,
+      "suspicious": 0,
+      "brute_force": 0,
+      "waf": 175,
+      "ipdb": 5415
+    },
+    "overall": {
+      "scanner": 5797,
+      "brute_force": 23,
+      "waf": 5098,
+      "ipdb": 1025275
+    },
+    "websites": {
+      "stats": {
+        "cpu_usage": 27,
+        "memory_usage": 35,
+        "disk_usage": 68,
+        "load_average": 33.5
+      }
+    },
+    "hostname": "server.example.com"
+  },
+  "version": "5.85.13",
+  "errors": null,
+  "alerts": null
+}
+```
+
+---
 
 ### User Report
 
