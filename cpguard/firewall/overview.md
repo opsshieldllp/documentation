@@ -522,7 +522,6 @@ cpgcli fw --block-meta-bots disable
 
 ---
 
-:::
 ## Fail2ban
 
 **Fail2Ban** protects your server against brute-force attacks by monitoring authentication logs and temporarily blocking IP addresses after repeated failed login attempts. When an offending IP is detected, Fail2Ban automatically applies a temporary block. Once the ban period expires, the IP is automatically unblocked — unless it triggers another jail violation.
@@ -604,7 +603,7 @@ cpgcli fw --fail2ban --disable-jail exim
 
 :::note
 Multiple jail configuration files can be enabled or disabled at once by providing a comma-separated list of file names.
-
+:::
 
 ## Country Filtering
 
@@ -648,7 +647,9 @@ cpgcli fw --deny-country CN
 
 Port filtering controls inbound and outbound traffic by defining which TCP and UDP ports are permitted.
 
-> ⚠️ **Warning:** When port filtering is **enabled**, all TCP/UDP ports are **blocked by default**. Only ports explicitly added to the allowed list will be accessible. Enabling this feature without first configuring allowed ports may disrupt running services.
+:::warning 
+When port filtering is **enabled**, all TCP/UDP ports are **blocked by default**. Only ports explicitly added to the allowed list will be accessible. Enabling this feature without first configuring allowed ports may disrupt running services.
+:::
 
 ![Firewall](../../assets/img/cpguard/firewall/fw16.png)
 
@@ -711,8 +712,9 @@ cpgcli fw --port udp-in --list
 
 Dynamic DNS (DDNS) automatically updates the DNS record associated with a domain name whenever your public IP address changes. This is commonly used for networks or devices with dynamic IP addresses (e.g., home broadband connections, cloud instances without static IPs), ensuring that your domain name always resolves to the correct address.
 
-> **Example:** If you add `myhome.example.com` as a DDNS entry and it currently resolves to `203.0.113.42`, that IP is automatically whitelisted. When your IP changes to `203.0.113.99`, the whitelist is updated to reflect the new address.
-
+:::note[**Note**] 
+If you add `myhome.example.com` as a DDNS entry and it currently resolves to `203.0.113.42`, that IP is automatically whitelisted. When your IP changes to `203.0.113.99`, the whitelist is updated to reflect the new address.
+:::
 
 ### DDNS Commands
 
