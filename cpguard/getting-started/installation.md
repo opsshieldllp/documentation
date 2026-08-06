@@ -61,7 +61,7 @@ The installer automatically probes your system for the Operating System, Control
 
 If your server does not use a control panel, or uses an unlisted/custom panel, the installer will automatically launch an **interactive configuration wizard** to collect your environment details.
 
-- 👉 See the [Standalone Overview & Installation](../standalone/overview) for the install flow and [Standalone Configuration Reference](. ./standalone/configuration) for the parameter details.
+See the [Standalone Overview & Installation](../standalone/overview) for the install flow and [Standalone Configuration Reference](../standalone/configuration) for the parameter details.
 
 ---
 
