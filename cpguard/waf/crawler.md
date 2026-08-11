@@ -46,7 +46,6 @@ The following crawler detection rules are included in the Bad Crawler Protection
 | 1200004 | GPTBot |
 | 1200007 | ChatGPT |
 | 1200009 | OpenAI |
-| 1200008 | Meta-ExternalAgent |
 | 1200010 | Amazonbot |
 | 1200003 | Bytespider |
 | 1200005 | ImagesiftBot |
