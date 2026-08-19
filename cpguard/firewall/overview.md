@@ -71,7 +71,6 @@ If you are unsure which provider to use, stick with **iptables** for a stable an
 **Integrated Security Modules:**
 
 * **IPDB Integration**: Proactive blocking based on global threat intelligence. IPs flagged by the IPDB are automatically denied at the firewall level.
-* **Fail2Ban**: Service-level brute-force defense for SSH, FTP, SMTP, and control panel logins. Failed authentication attempts trigger automatic temporary blocks.
 * **DoS & Bot Protection**: Safeguards against connection floods and aggressive AI scrapers by enforcing rate limits and behavioral analysis.
 * **Port Filtering**: Granular control over inbound and outbound TCP/UDP traffic. Define exactly which ports are accessible to prevent unauthorized service exposure.
 
@@ -521,89 +520,6 @@ cpgcli fw --block-meta-bots disable
 ```
 
 ---
-
-## Fail2ban
-
-**Fail2Ban** protects your server against brute-force attacks by monitoring authentication logs and temporarily blocking IP addresses after repeated failed login attempts. When an offending IP is detected, Fail2Ban automatically applies a temporary block. Once the ban period expires, the IP is automatically unblocked — unless it triggers another jail violation.
-
-cPGuard integrates Fail2Ban directly into its firewall management interface, allowing you to enable, disable, and configure Fail2Ban jails with ease — all from a single dashboard.
-
----
-
-![Firewall](../../assets/img/cpguard/firewall/fw13.png)
-
-
-### Enabling Fail2Ban Using the cPGuard Portal
-
-1. Log in to the **cPGuard App Portal**
-2. Navigate to **Protection** >> **Firewall** >> **Fail2Ban**
-3. Switch the toggle to **On** to enable Fail2Ban
-4. Save the changes
-
-### Using the CLI
-
-```bash
-# Enable Fail2Ban
-cpgcli fw --fail2ban enable
-
-# Disable Fail2Ban
-cpgcli fw --fail2ban disable
-
-# Check the current status
-cpgcli fw --fail2ban status
-```
-
----
-
-### Supported Jails
-
-Fail2Ban uses **jails** to monitor and protect specific services on your server. Each jail watches a particular log file or service for suspicious activity and blocks offending IPs after a configurable number of failed attempts within a defined time window. cPGuard allows you to toggle individual jails on or off based on the services running on your server.
-
-| Service | Description |
-|---------|-------------|
-| **Apache DoS Detection** | Blocks IPs making excessive HTTP requests to the web server |
-| **cPanel Login** | Protects control panel authentication endpoints from unauthorized access |
-| **Dovecot (IMAP/POP3)** | Secures email client authentication against brute-force attempts |
-| **Exim (SMTP)** | Prevents SMTP relay abuse and authentication attacks |
-| **FTP** | Blocks brute-force attempts against FTP services |
-| **SSH** | The most critical jail — protects the SSH daemon from password guessing attacks |
-
-:::note
-Enable only the jails relevant to the services running on your server. Enabling unnecessary jails may result in unintended blocks or increased resource usage.
-:::
-
----
-
-### Managing Individual Jails Using the cPGuard Portal
-
-1. Navigate to **Protection** >> **Firewall** >> **Fail2Ban**
-2. Locate the jail you want to enable or disable
-3. Toggle the respective jail **On** or **Off**
-4. Save the changes
-
-### Using the CLI
-
-```bash
-# Enable a specific jail
-cpgcli fw --fail2ban --enable-jail <jail-file>
-
-# Disable a specific jail
-cpgcli fw --fail2ban --disable-jail <jail-file>
-```
-
-**Examples:**
-
-```bash
-# Enable the FTP jail
-cpgcli fw --fail2ban --enable-jail ftp
-
-# Disable the Exim (EXIM) jail
-cpgcli fw --fail2ban --disable-jail exim
-```
-
-:::note
-Multiple jail configuration files can be enabled or disabled at once by providing a comma-separated list of file names.
-:::
 
 ## Country Filtering
 
