@@ -9,7 +9,7 @@ cPGuard X allows you to enable many PHP modules directly from the GUI, but for t
 
 {/* comment */}
 
-:::info[GUI vs PECL]
+:::info[GUI vs PECL] 
 If the extension you need is already listed in the cPGuard X GUI, it is easier to enable it from **Settings → PHP Modules** without SSH. See [Enabling PHP Extensions in the GUI](/cpguard-x/php/enable-php-module) for those steps.
 
 Use this guide for extensions **not available** in the GUI, including third-party modules.
@@ -98,7 +98,8 @@ sudo nano /opt/cpguard/packages/php84/etc/php.ini
 
 **c)** Save the file and re-run the PECL install command.
 
-:::danger Re-enable Security After Installation
+:::danger 
+Re-enable Security After Installation
 Once the extension installation is complete, **immediately uncomment** the `disable_functions` line in `php.ini` to restore the security protections. Leaving these functions enabled is a security risk.
 :::
 
@@ -160,7 +161,7 @@ You may see the following message during uninstall:
 Unable to remove "extension=EXTENSION.so" from php.ini
 ```
 
-:::note
+:::note 
 This message can be **safely ignored**. It simply means PECL could not automatically update `php.ini`, but since the extension was loaded via a dedicated `conf.d` ini file, the removal will still take effect after a PHP-FPM restart.
 :::
 
