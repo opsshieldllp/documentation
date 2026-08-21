@@ -49,6 +49,8 @@ Before enabling WAF:
 See [Panel-Specific Steps](panel-specific-steps.md) for control panel setup.
 :::
 
+---
+
 ## Enable / Disable WAF
 
 WAF is turned **OFF by default during installation** to avoid conflicts with existing ModSecurity rule sets.
@@ -57,33 +59,82 @@ You may enable it anytime after verifying requirements.
 
 ![Logo](../../assets/img/cpguard/waf/waf.png)
 
-### Enable WAF
+### Using Command-line
 
 ```bash
+# Enable WAF
 cpgcli waf --enable
-```
 
-Enable with optional modules:
-
-```bash
-cpgcli waf --enable=scanner,webshell,captcha,crawler
-```
-
-### Disable WAF
-
-```bash
+# Disable WAF
 cpgcli waf --disable
 ```
 
-Disable specific modules:
+## Enable / Disable Optional WAF Modules
+
+Beyond the core rule set, cPGuard WAF includes several optional modules that can be enabled or disabled independently. You can control them by passing a comma-separated list of module names:
 
 ```bash
-cpgcli waf --disable=scanner,webshell,captcha,crawler
+# Enable specific optional modules
+cpgcli waf --enable=scanner,webshell,capthca,crawler
+
+# Disable specific optional modules
+cpgcli waf --disable=scanner,webshell,capthca,crawler
 ```
 
-## Optional Rule Sets
+### Available Optional Modules
 
-You may enable additional rule modules for enhanced protection.
+| Module | What It Does |
+|---|---|
+| `scanner` | Blocks bad crawlers and malicious scanning tools |
+| `webshell` | Prevents PHP web shell command execution |
+| `capthca` | Enforces CAPTCHA verification on CMS login pages |
+| `crawler` | Blocks abusive and fake search engine crawlers |
+
+:::tip
+You can mix and match modules freely. For example, to enable only CAPTCHA and scanner protection without touching the other modules:
+
+```bash
+cpgcli waf --enable=capthca,scanner
+```
+:::
+
+---
+
+## Why WAF Is Disabled by Default
+
+When cPGuard is first installed, the WAF is **turned off by default**. This is an intentional design decision. Many server administrators already have their own WAF rule sets or ModSecurity configurations in place. Enabling cPGuard's WAF on top of existing rules without review could cause conflicts.
+
+You can safely enable it at any time once you have reviewed your server's existing configuration.
+
+:::note
+Before enabling WAF, make sure your server meets all prerequisites. Refer to the [Panel-Specific Steps](panel-specific-steps.md) page before proceeding.
+:::
+
+---
+
+## What is WAF Health Check
+
+The WAF Health Check is a background check that verifies the health and availability of the cPGuard WAF integration. It helps ensure that the WAF is properly configured and functioning as expected.
+
+#### Disable WAF Health Check
+
+Run the following command as root:
+
+```bash
+cpgcli waf --health-check disable
+```
+
+After disabling the health check, cPGuard will no longer perform the WAF health verification until it is enabled again.
+
+#### Enable WAF Health Check
+
+To re-enable the WAF Health Check, run:
+
+```bash
+cpgcli waf --health-check enable
+```
+
+---
 
 ### RBL Protection
 
@@ -122,45 +173,17 @@ Blocks:
 
 Helps reduce unnecessary CPU and I/O load.
 
+---
+
 ### Proxy IP Check
 A Layer 7 extension that extracts the real visitor IP behind proxies/CDNs, so blocking decisions are made on the true client address instead of the proxy IP.
 
 See [Proxy IP Check](proxy-ip-check.md) for supported headers, usage scenarios, and configuration notes.
 
-## PHP Upload Blocking (WAF Module)
+---
 
-You can prevent PHP file uploads via:
+:::note
+WAF configuration changes are not instant. cPGuard applies updates with a short delay and can automatically reload/restart required web services. If a change does not apply after a short wait, perform a manual restart.
+:::
 
-* Web forms
-* Web file managers
-* Web shells
-
-⚠ When enabled, PHP files cannot be edited through web-based file managers.
-
-### Enable
-
-```bash
-cpgcli upload-scanner --block-php=enable
-```
-
-### Disable
-
-```bash
-cpgcli upload-scanner --block-php=disable
-```
-
-## Whitelisting Rules
-
-If a rule causes a false positive:
-
-```bash
-cpgcli waf --whitelist --add RULE_ID
-cpgcli waf --whitelist --remove RULE_ID
-```
-
-Use the Rule ID from WAF logs to whitelist specific triggers instead of disabling modules globally.
-
-## Applying Changes
-
-WAF configuration updates are applied with a short delay. cPGuard can automatically reload ModSecurity and restart the web server when required, so manual restart is usually not needed.
 
