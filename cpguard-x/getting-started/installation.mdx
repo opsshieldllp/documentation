@@ -37,16 +37,16 @@ import Tabs from '@theme/Tabs';
       import TabItem from '@theme/TabItem';
 
 <Tabs>
-  <TabItem value="mysql80" label="MySQL 8.0 (Default)" default>
-    Run in Terminal:
-    ```bat
-    cd /usr/local/src && rm -f cpguardx.sh && curl -o cpguardx.sh -L https://downloads.opsshield.com/cpguard/cpguardx.sh && bash cpguardx.sh LICENCE-KEY
-    ```
-  </TabItem>
-  <TabItem value="mysql84" label="MySQL 8.4">
+  <TabItem value="mysql84" label="MySQL 8.4 (Default)" default>
     Run in Terminal:
     ```bash
     cd /usr/local/src && rm -f cpguardx.sh && curl -o cpguardx.sh -L https://downloads.opsshield.com/cpguard/cpguardx.sh && DB_ENGINE='MYSQL_8.4' bash cpguardx.sh LICENCE-KEY
+    ```
+  </TabItem>
+  <TabItem value="mysql80" label="MySQL 8.0" >
+    Run in Terminal:
+    ```bash
+    cd /usr/local/src && rm -f cpguardx.sh && curl -o cpguardx.sh -L https://downloads.opsshield.com/cpguard/cpguardx.sh && DB_ENGINE='MYSQL_8.0' bash cpguardx.sh LICENCE-KEY
     ```
   </TabItem>
   <TabItem value="mariadb10" label="MariaDB 10.11">

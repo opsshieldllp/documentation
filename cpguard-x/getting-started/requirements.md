@@ -12,9 +12,16 @@ Before installing **cPGuard X**, ensure that your server environment meets the f
 
 cPGuard X must be installed on a supported **64-bit Linux operating system**.
 
-Currently supported installation environment:
+Currently supported installation environments:
 
-- Ubuntu 24.04 (recommended)
+- Ubuntu 24.04 
+- Ubuntu 26.04
+
+:::note
+      PHP 7.4 and PHP 8.1 are not available on Ubuntu 26.04.
+      MySQL 8.0 is also not supported on Ubuntu 26.04.
+      :::
+
 
 The server must be a **fresh installation with no existing control panels installed**.
 
@@ -43,8 +50,8 @@ cPGuard X supports multiple database engines. You can choose the appropriate one
 
 Supported options include:
 
-- MySQL 8.0 (default)
-- MySQL 8.4
+- MySQL 8.4 (default)
+- MySQL 8.0 
 - MariaDB 10.11
 - MariaDB 11.4
 
