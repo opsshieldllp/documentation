@@ -1,12 +1,12 @@
 ---
-title: Bad Crawler Protection
+title: AI Crawler protection
 ---
 
-The **Bad Crawler Protection** feature in cPGuard is an additional **Web Application Firewall (WAF) protection layer(Layer 7)** designed to block known automated crawlers, AI agents, and data scraping bots from accessing websites.
+The **AI Crawler protection** feature in cPGuard is an additional **Web Application Firewall (WAF) protection layer(Layer 7)** designed to block known automated crawlers, AI agents, and data scraping bots from accessing websites.
 
 Many AI services and search platforms use automated crawlers to collect website content. While some website owners may want their content to be indexed, others may prefer to prevent automated data collection.
 
-When **Bad Crawler Protection** is enabled, cPGuard automatically identifies known crawler agents and blocks their requests before they reach the website.
+When **AI Crawler protection** is enabled, cPGuard automatically identifies known crawler agents and blocks their requests before they reach the website.
 
 When a visitor or automated bot sends a request to a website, cPGuard checks the incoming request and compares it against predefined WAF rules to identify known crawler agents.
 
@@ -14,11 +14,11 @@ If the request matches a blocked crawler identifier, the WAF blocks the request 
 
 To enable or disable this protection, navigate to:
 
-**cPGuard → Settings → WAF & Bruteforce → Bad Crawler Protection**
+**cPGuard → Settings → WAF & Bruteforce → AI Crawler protection**
 
 Use the toggle option to enable or disable the feature.
 
-![WAF](../../assets/img/cpguard/waf/bad-crawler.png)
+![WAF](../../assets/img/cpguard/waf/ai-crawler.png)
 
 ---
 
@@ -38,7 +38,7 @@ When a request matches one of these detection rules, the corresponding WAF rule 
 
 ---
 
-The following crawler detection rules are included in the Bad Crawler Protection ruleset:
+The following crawler detection rules are included in the AI Crawler protection ruleset:
 
 | Rule ID | Blocked Crawler / Agent |
 |---------|-------------------------|
@@ -59,11 +59,11 @@ The following crawler detection rules are included in the Bad Crawler Protection
 
 ## Allowing Specific AI Crawlers
 
-If you want to allow a specific AI crawler while keeping **Bad Crawler Protection** enabled for other crawlers, you can whitelist the required rule ID.
+If you want to allow a specific AI crawler while keeping **AI Crawler protection** enabled for other crawlers, you can whitelist the required rule ID.
 
 Example:
 
-To allow **ClaudeBot** while keeping **Bad Crawler Protection** enabled for other crawlers, add the corresponding WAF rule ID to the whitelist.
+To allow **ClaudeBot** while keeping **AI Crawler protection** enabled for other crawlers, add the corresponding WAF rule ID to the whitelist.
 
 For instructions on adding WAF rule whitelists, refer to:
 
