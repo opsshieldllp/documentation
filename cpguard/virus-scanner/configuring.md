@@ -38,6 +38,11 @@ Allowed options are **email**, **disable**, or **quarantine**.
 | **Quarantine** *(Recommended)* | Moves the file to a secure quarantine directory. |
 | **Disable File** | Sets file permissions to `000`, rendering it inaccessible. |
 
+
+:::note
+      Files stored in the cPGuard quarantine directory (/etc/cpguard/quarantine) are automatically removed based on the [**Keep Logs for**](../additional-settings.md) setting under Additional Settings. Files older than the configured retention period are purged automatically.
+      :::
+
 ---
 
 # Scanner Exclusions and Whitelisting
