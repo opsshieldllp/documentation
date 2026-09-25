@@ -13,7 +13,11 @@ Process Manager is available from:
 **Website Management → Advanced → Process Manager**
 
 ![PM](../../assets/img/cpguardx-applications/proces-manager.png)
+
 ---
+
+### Overview
+
 
 The Process Manager displays the processes configured for the website, along with details such as the process name, command, status, running time, PID, CPU and memory usage, listening port, and available process actions.
 
