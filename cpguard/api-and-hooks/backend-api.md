@@ -65,7 +65,7 @@ POST https://localhost:9098/api/api.php?method=status
 **Curl example:**
 
 ```bash
-curl -X POST "http://localhost:9098/api/api.php?method=status" \
+curl -k -s -X POST "https://localhost:9098/api/api.php?method=status" \
      -H "Authorization: Bearer 3cf8f5xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx3cd4d71f8df795285b"
 ```
 
@@ -74,7 +74,7 @@ curl -X POST "http://localhost:9098/api/api.php?method=status" \
 ```php
 <?php
 $api_key = '3cf8f5xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx3cd4d71f8df795285b';
-$url = "http://localhost:9098/api/api.php?method=status";
+$url = "https://localhost:9098/api/api.php?method=status";
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
