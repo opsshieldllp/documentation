@@ -7,42 +7,34 @@ The **"Allowed Accounts Limit Exceeded "** or **"License instance limit exceeded
 
 ![Limit Exceed error](../../assets/img/cpguard/general/user.png)
 
-cPGuard offers two license types:
+cPGuard offers multiple license plans based on the number of user accounts protected on a server:
 
-- **Standard License** – Valid for up to **50 users** on a server.
-- **Unlimited License** – No limit on the number of users.
+* **Starter** – Up to **10 user accounts**
+* **Small Business** – Up to **50 user accounts**
+* **Growth** – Up to **250 user accounts**
+* **Unlimited** – No limit on the number of protected user accounts
 
-Since cPGuard supports multiple hosting control panels and platforms, the user count is determined based on the number of **normal system users** present on the server, regardless of the number of users shown in the hosting control panel.
+The user count is based on the **user accounts protected by cPGuard** in the server.
 
-## How to Resolve the Error
+## How to Resolve the User Limit Error
 
-You can resolve this issue using one of the following methods:
+If the number of protected users exceeds the limit of your current license, you can upgrade to a plan that supports the required number of users.
 
-### Option 1: Reduce the User Count
-
-List the users on the server and remove any unwanted or inactive users to bring the total user count below **50**.
-
-### Option 2: Upgrade to an Unlimited License
-
-Purchase and apply an **Unlimited License** to the server. Once the new license is active, you may cancel the existing Standard License.
-
-> **Note:** There is currently no direct upgrade path from a Standard License to an Unlimited License. A new Unlimited License must be purchased and applied separately.
+You can contact our support team to request a **license plan upgrade**. 
 
 ## How User Count Is Calculated
 
-To determine the number of users on your server, run the following command:
+cPGuard counts the user accounts that are currently protected by cPGuard for the purpose of license usage.
+
+To view the users currently counted by cPGuard, run:
 
 ```bash
-/usr/bin/awk -F '[/:]' '{if ($3 >= 1000 && $3 < 60000 && $3 != 65534) print $1}' '/etc/passwd' | grep -v 'cpguard\|centos\|clamav\|magicspam\|cldiaguser\|ubuntu\|cyberpanel\|docker\|ftpuser\|lscpd' 2>&1 | /usr/bin/wc -l
+cpgcli license --list-users
 ```
 
-## View the List of Counted Users
+This command displays the user details that cPGuard is currently counting toward the license limit.
 
-To display the users included in the license count, run:
-
-```bash
-/usr/bin/awk -F '[/:]' '{if ($3 >= 1000 && $3 < 60000 && $3 != 65534) print $1}' '/etc/passwd' | grep -v 'cpguard\|centos\|clamav\|magicspam\|cldiaguser\|ubuntu\|cyberpanel\|docker\|ftpuser\|lscpd'
-```
+Use this command to verify the current protected-user count before contacting support regarding a license limit.
 
 ## Need Assistance?
 
