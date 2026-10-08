@@ -7,10 +7,6 @@ Node.js allows JavaScript applications to run on the server. In cPGuard X, each 
 
 Website owners can select the Node.js runtime version, create and supervise long-running application processes, and route domain requests to their Node.js application using reverse proxy rules.
 
-## Node.js Version Management
-
-Node.js applications may require a specific Node.js runtime version. cPGuard X allows you to view the available Node.js versions and select the default runtime for the website.
-
 Go to:
 
 **Website Management → Advanced → Node.js**

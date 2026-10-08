@@ -3,7 +3,7 @@ title: Node.js
 sidebar_position: 2
 ---
 
-# Node.js Application Management
+# Deploy a Website with Node.js
 
 cPGuardX provides built-in support for deploying and managing Node.js applications directly from the control panel. Users can enable Node.js for a domain and deploy applications without manually configuring the Node.js runtime, process manager, or reverse proxy.
 
@@ -24,22 +24,24 @@ Node.js applications can be deployed in two ways:
 
 When creating a new website, select **Node.js (Beta)** as the application type and continue with the website setup. You can then choose the application source:
 
-1. **Starter App** – Create a new cPGuardX-managed Node.js application.
-2. **Git Repository** – Deploy an application from a remote Git repository.
+1. [**Starter App**](../Applications/node-install#1-deploying-from-a-starter-app) – Create a new cPGuardX-managed Node.js application.
+2. [**Git Repository**](../Applications/node-install#2-deploying-from-a-git-repository) – Deploy an application from a remote Git repository.
 
-### Deploying from a Starter App
+### 1. Deploying from a Starter App
 
 Select **Starter App** to create a new Node.js application managed by cPGuardX, then configure the following options.
 
 ![Node](../../assets/img/cpguardx-applications/node/node-app-starter.png)
 
-The details for **Application name**, [**Process Manager**](../operations/process-manager.md), and [**Reverse proxy rules**](../website-management/reverse-proxy.md) are filled in automatically. If you want to change any of them, you can edit the values. Otherwise, click **Install and Start**.
+:::note
+      The details for **Application name**, [**Process Manager**](../operations/process-manager.md), and [**Reverse proxy rules**](../website-management/reverse-proxy.md) are filled in automatically. If you want to change any of them, you can edit the values. Otherwise, click **Install and Start**.
+      :::
 
 cPGuardX displays the deployment progress while the application is being installed. Once the process is complete, a confirmation message is displayed and the application is added to the list of deployed applications.
 
 ![Node](../../assets/img/cpguardx-applications/node/node-app-starter-install.png)
 
-### Deploying from a Git Repository
+### 2. Deploying from a Git Repository
 
 When creating a Node.js application, select **Git Repository** as the application source and configure the following.
 
@@ -50,11 +52,6 @@ Enter the repository details:
 * **Repository Name** – The name of the repository.
 * **Repository URL** – The remote URL of the Git repository.
 * **Branch** – Select the branch to deploy from the drop-down list.
-
-#### Process Manager and Reverse Proxy
-
-The details for **Process Manager** and **Reverse Proxy** are filled in automatically. If you want to change any of them, you can edit the values.
-
 * **Start Command** – The command used to start the application. It is detected automatically from the application's entry file and loaded into the field, for example `node index.js`, `node app.js`, or `node server.js`, depending on how the application is set up.
 
 After entering the repository details, click **Install and Start**.
@@ -71,7 +68,6 @@ The **Manage** page displays a summary of the deployed Node.js application, incl
 
 * **Application Path** – The filesystem path where the Node.js application is located.
 * **Runtime Stack** – The Node.js and NPM versions used by the application.
-* **Status** – The current status of the Node.js application, such as **Online**.
 * **Git Repository** – Shows whether the application is connected to a Git repository.
 
 
@@ -79,7 +75,6 @@ The following action buttons are also available at the top of the page:
 
 * **Deploy** – Deploys the application using the saved deployment configuration.
 * **Terminal** – Opens a terminal so you can access the application's directory and run commands directly from the control panel.
-* **Refresh** – Reloads the page to display the latest application details and status.
 
 :::note
       The **Deploy** button on the application's management page works only after the deployment configuration has been set up and saved.
@@ -103,7 +98,9 @@ The management interface provides the following sections:
 | **Settings** | Process, forwarding, and deployment configuration. |
 | **Git** | Repository and deployment management. *Available only for applications deployed from a Git repository.* |
 
-> **Note:** Applications deployed from a Git repository include an additional **Git** tab in the management interface.
+:::note
+      Applications deployed from a Git repository include an additional **Git** tab in the management interface.
+      :::
 
 ### Dashboard
 
@@ -192,8 +189,10 @@ If the application is not connected to a Git repository, click **Initialize Repo
 
 Click **Delete Application** to remove the application. This stops all associated processes and deletes the application's configuration.
 
-> **Warning:** This action cannot be undone.
-
+:::warning
+      This action cannot be undone.
+      :::
+      
 ### Git
 
 The Git section is available only for applications deployed from a Git repository.
