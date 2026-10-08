@@ -1,6 +1,6 @@
 ---
-title: Node.js 
-sidebar_position: 2
+title: Node.js Version Management
+sidebar_position: 3
 ---
 
 Node.js allows JavaScript applications to run on the server. In cPGuard X, each website can use one default Node.js version.
