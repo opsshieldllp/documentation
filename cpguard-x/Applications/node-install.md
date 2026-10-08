@@ -24,8 +24,8 @@ Node.js applications can be deployed in two ways:
 
 When creating a new website, select **Node.js (Beta)** as the application type and continue with the website setup. You can then choose the application source:
 
-1. [**Starter App**](../Applications/node-install#1-deploying-from-a-starter-app) – Create a new cPGuardX-managed Node.js application.
-2. [**Git Repository**](../Applications/node-install#2-deploying-from-a-git-repository) – Deploy an application from a remote Git repository.
+1. [**Starter App**](./node-install#1-deploying-from-a-starter-app) – Create a new cPGuardX-managed Node.js application.
+2. [**Git Repository**](./node-install#2-deploying-from-a-git-repository) – Deploy an application from a remote Git repository.
 
 ### 1. Deploying from a Starter App
 
@@ -192,7 +192,7 @@ Click **Delete Application** to remove the application. This stops all associate
 :::warning
       This action cannot be undone.
       :::
-      
+
 ### Git
 
 The Git section is available only for applications deployed from a Git repository.
