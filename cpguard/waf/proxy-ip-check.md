@@ -20,17 +20,17 @@ Enable this module if your server is behind:
 
 ## Supported Headers
 
-The module checks common real-IP headers:
 
+The module checks the supported HTTP headers in the following order to identify the visitor's real IP address:
+
+- `X-Forwarded-For`
+- `X-Real-IP`
 - `CF-Connecting-IP`
 - `True-Client-IP`
-- `X-Real-IP`
-- `X-Forwarded-For`
-- `Fastly-Client-IP`
 - `X-Client-IP`
-- `X-Cluster-Client-IP`
 - `Forwarded`
-- `REMOTE_ADDR` (fallback)
+- `X-Cluster-Client-IP`
+- `Fastly-Client-IP`
 
 ## Enable or Disable
 
