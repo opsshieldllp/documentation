@@ -44,6 +44,7 @@ If you are using one of these panels,you can follow our dedicated, panel-specifi
 - [Install on CyberPanel](panel-guides/cyberpanel.md)
 - [Install on InterWorx](panel-guides/interworx.md)
 - [Install on Runcloud](panel-guides/runcloud.md)
+- [Install on AdminBolt](panel-guides/adminbolt.md)
 
 ### 2. cPanel, DirectAdmin, Plesk
 
