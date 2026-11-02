@@ -4,7 +4,7 @@ sidebar_position: 1
 description: Manage cPGuard and cPGuard X licenses, upgrades, renewals, server assignments and plan changes.
 ---
 
-# Licenses and Planss
+# Licenses and Plans
 
 The OPSSHIELD Client Area allows you to manage all cPGuard and cPGuard X licenses from a single location.
 
