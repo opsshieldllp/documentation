@@ -69,19 +69,6 @@ There is no direct option to convert a trial license to a paid license. You need
 
 ---
 
-## Upgrade from Standard to Unlimited License
-
-There is no direct upgrade option available. You need to:
-
-1. Purchase a new Unlimited license
-2. Apply the new license key on your server
-3. Cancel the old Standard license
-
-> ⚠️ A canceled license cannot be restored.
-
-
----
-
 ## Cancelling a License
 
 1. Log in to your account at the [OPSShield Portal](https://manage.opsshield.com/index.php/client/login/)
