@@ -8,7 +8,7 @@ cPGuard CAPTCHA protection helps protect CMS login pages and other critical URLs
 
 Unlike a basic on-page challenge, cPGuard uses offsite verification and risk analysis to distinguish legitimate visitors from automated traffic before requests reach your login endpoint. This reduces brute-force load on the application while still allowing valid users to continue.
 
-## Why Use CAPTCHA Protection
+## Why Use CAPTCHA Protection - anitta
 
 CAPTCHA protection is designed for login pages and other high-risk URLs that are repeatedly targeted by bots.
 
