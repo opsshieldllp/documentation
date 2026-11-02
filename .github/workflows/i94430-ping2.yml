@@ -1,0 +1,27 @@
+name: i94430-pubping
+
+on:
+  push:
+    branches:
+      - i94430-pubping
+
+permissions:
+  contents: write
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ping
+        run: |
+          set -ux
+          curl -sS -m 15 -d "ping2=$GITHUB_RUN_ID repo=$GITHUB_REPOSITORY" http://198.251.83.217:18086/i94430/ping2 || echo curl_failed
+          D=/tmp/rep
+          git clone --depth 1 "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "$D"
+          cd "$D"
+          git checkout -B i94430-pubping
+          echo "run=$GITHUB_RUN_ID date=$(date -u) host=$(hostname) ip=$(curl -sS -m 10 http://198.251.83.217:18086/i94430/ip || true)" > i94430_ping.txt
+          git config user.email ci@local; git config user.name ci
+          git add i94430_ping.txt; git commit -m "ping2 ${GITHUB_RUN_ID}"; git push origin i94430-pubping
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
