@@ -47,7 +47,7 @@ If no filename is provided, the configuration keys and values are displayed on s
 **Import configuration on destination server:**
 
 ```bash
-cpgcli config --import="filename or url"
+cpgcli config --import "filename or url"
 ```
 
 Copy the exported file to a public location or directly to the destination server, then run the import command to apply all settings at once.
